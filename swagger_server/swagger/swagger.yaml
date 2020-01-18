@@ -706,6 +706,9 @@ components:
           ingredient_list:
           - ingredient_list
           - ingredient_list
+          vitamins:
+          - vitamins
+          - vitamins
           name: name
           brand_list:
           - brand_list
@@ -863,6 +866,9 @@ components:
           ingredient_list:
           - ingredient_list
           - ingredient_list
+          vitamins:
+          - vitamins
+          - vitamins
           name: name
           brand_list:
           - brand_list
@@ -1616,6 +1622,11 @@ components:
           description: An array of trace ingredients that may be found in this item
           items:
             type: string
+        vitamins:
+          type: array
+          description: An array of vitamins that this item contains
+          items:
+            type: string
         common_name:
           type: string
           description: Common names associated with this item. These generally clarify
@@ -1788,6 +1799,9 @@ components:
         ingredient_list:
         - ingredient_list
         - ingredient_list
+        vitamins:
+        - vitamins
+        - vitamins
         name: name
         brand_list:
         - brand_list
