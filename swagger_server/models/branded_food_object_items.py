@@ -730,7 +730,7 @@ class BrandedFoodObjectItems(Model):
     def vitamins(self) -> List[str]:
         """Gets the vitamins of this BrandedFoodObjectItems.
 
-        An array of vitamins that can be found in this item  # noqa: E501
+        An array of vitamins that are found in this item  # noqa: E501
 
         :return: The vitamins of this BrandedFoodObjectItems.
         :rtype: List[str]
@@ -741,7 +741,7 @@ class BrandedFoodObjectItems(Model):
     def vitamins(self, vitamins: List[str]):
         """Sets the vitamins of this BrandedFoodObjectItems.
 
-        An array of vitamins that can be found in this item  # noqa: E501
+        An array of vitamins that are found in this item  # noqa: E501
 
         :param vitamins: The vitamins of this BrandedFoodObjectItems.
         :type vitamins: List[str]
