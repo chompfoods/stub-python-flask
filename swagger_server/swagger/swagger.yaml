@@ -1624,7 +1624,7 @@ components:
             type: string
         vitamins:
           type: array
-          description: An array of vitamins that this item contains
+          description: An array of vitamins that can be found in this item
           items:
             type: string
         common_name:
