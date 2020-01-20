@@ -88,7 +88,7 @@ def food_branded_search_php_get(allergen=None, brand=None, category=None, countr
     return 'do some magic!'
 
 
-def ingredient_search_php_get(find, list, raw=None, limit=None):  # noqa: E501
+def food_ingredient_search_php_get(find, list, raw=None, limit=None):  # noqa: E501
     """Get raw/generic food ingredient item(s)
 
     # Get data for a specific ingredient or a specific set of ingredients.  __Example:__ &#x60;&#x60;&#x60;https://chompthis.com/api/v2/ingredient/search.php?api_key&#x3D;API_KEY&amp;find&#x3D;STRING/LIST&amp;list&#x3D;BOOLEAN&amp;raw&#x3D;BOOLEAN&#x60;&#x60;&#x60;  # noqa: E501
