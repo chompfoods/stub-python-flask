@@ -46,7 +46,8 @@ class TestDefaultController(BaseTestCase):
         Get a branded food item by name
         """
         query_string = [('name', 'name_example'),
-                        ('limit', 56)]
+                        ('limit', 56),
+                        ('page', 56)]
         response = self.client.open(
             '/api/v2/food/branded/name.php',
             method='GET',
