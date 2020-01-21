@@ -9,7 +9,9 @@ info:
     \ then click the \"__Close__\" button.\n  - Scroll down to the section titled\
     \ \"__default__\" and click on the API endpoint you wish to use.\n  - Click the\
     \ \"__Try it out__\" button.\n  - Enter the information the endpoint requires.\n\
-    \  - Click the \"__Execute__\" button.\n\n__Example:__ \n  - __[View example](https://raw.githubusercontent.com/chompfoods/examples/master/response-object.json)__\
+    \  - Click the \"__Execute__\" button.\n\n__Example:__ \n  - Branded Food: __[View\
+    \ example](https://raw.githubusercontent.com/chompfoods/examples/master/branded-food-response-object.json)__\
+    \ API response object.\n  - Ingredient: __[View example](https://raw.githubusercontent.com/chompfoods/examples/master/ingredient-response-object.json)__\
     \ API response object.\n\n-----\n\n__How Do I Find My API Key?__\n  - Your API\
     \ key was sent to the email address you used to create your subscription.\n  -\
     \ You will also find your API key in the __[Client Center](https://chompthis.com/api/manage.php)__.\n\
