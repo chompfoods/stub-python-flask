@@ -14,7 +14,7 @@ class BrandedFoodObjectNutrientsUsda(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, id: int=None, name: str=None, per_100g: float=None, measurement_unit: str=None, min: float=None, max: float=None, median: float=None, data_points: int=None, footnote: str=None, source: str=None, description: str=None):  # noqa: E501
+    def __init__(self, id: int=None, name: str=None, per_100g: float=None, measurement_unit: str=None, min: float=None, max: float=None, median: float=None, rank: int=None, data_points: int=None, footnote: str=None, description: str=None):  # noqa: E501
         """BrandedFoodObjectNutrientsUsda - a model defined in Swagger
 
         :param id: The id of this BrandedFoodObjectNutrientsUsda.  # noqa: E501
@@ -31,12 +31,12 @@ class BrandedFoodObjectNutrientsUsda(Model):
         :type max: float
         :param median: The median of this BrandedFoodObjectNutrientsUsda.  # noqa: E501
         :type median: float
+        :param rank: The rank of this BrandedFoodObjectNutrientsUsda.  # noqa: E501
+        :type rank: int
         :param data_points: The data_points of this BrandedFoodObjectNutrientsUsda.  # noqa: E501
         :type data_points: int
         :param footnote: The footnote of this BrandedFoodObjectNutrientsUsda.  # noqa: E501
         :type footnote: str
-        :param source: The source of this BrandedFoodObjectNutrientsUsda.  # noqa: E501
-        :type source: str
         :param description: The description of this BrandedFoodObjectNutrientsUsda.  # noqa: E501
         :type description: str
         """
@@ -48,9 +48,9 @@ class BrandedFoodObjectNutrientsUsda(Model):
             'min': float,
             'max': float,
             'median': float,
+            'rank': int,
             'data_points': int,
             'footnote': str,
-            'source': str,
             'description': str
         }
 
@@ -62,9 +62,9 @@ class BrandedFoodObjectNutrientsUsda(Model):
             'min': 'min',
             'max': 'max',
             'median': 'median',
+            'rank': 'rank',
             'data_points': 'data_points',
             'footnote': 'footnote',
-            'source': 'source',
             'description': 'description'
         }
         self._id = id
@@ -74,9 +74,9 @@ class BrandedFoodObjectNutrientsUsda(Model):
         self._min = min
         self._max = max
         self._median = median
+        self._rank = rank
         self._data_points = data_points
         self._footnote = footnote
-        self._source = source
         self._description = description
 
     @classmethod
@@ -252,6 +252,29 @@ class BrandedFoodObjectNutrientsUsda(Model):
         self._median = median
 
     @property
+    def rank(self) -> int:
+        """Gets the rank of this BrandedFoodObjectNutrientsUsda.
+
+        Nutrient rank  # noqa: E501
+
+        :return: The rank of this BrandedFoodObjectNutrientsUsda.
+        :rtype: int
+        """
+        return self._rank
+
+    @rank.setter
+    def rank(self, rank: int):
+        """Sets the rank of this BrandedFoodObjectNutrientsUsda.
+
+        Nutrient rank  # noqa: E501
+
+        :param rank: The rank of this BrandedFoodObjectNutrientsUsda.
+        :type rank: int
+        """
+
+        self._rank = rank
+
+    @property
     def data_points(self) -> int:
         """Gets the data_points of this BrandedFoodObjectNutrientsUsda.
 
@@ -298,33 +321,10 @@ class BrandedFoodObjectNutrientsUsda(Model):
         self._footnote = footnote
 
     @property
-    def source(self) -> str:
-        """Gets the source of this BrandedFoodObjectNutrientsUsda.
-
-        Description of the nutrient source  # noqa: E501
-
-        :return: The source of this BrandedFoodObjectNutrientsUsda.
-        :rtype: str
-        """
-        return self._source
-
-    @source.setter
-    def source(self, source: str):
-        """Sets the source of this BrandedFoodObjectNutrientsUsda.
-
-        Description of the nutrient source  # noqa: E501
-
-        :param source: The source of this BrandedFoodObjectNutrientsUsda.
-        :type source: str
-        """
-
-        self._source = source
-
-    @property
     def description(self) -> str:
         """Gets the description of this BrandedFoodObjectNutrientsUsda.
 
-        Description of how the food nutrient value was obtained  # noqa: E501
+        Description of the nutrient source  # noqa: E501
 
         :return: The description of this BrandedFoodObjectNutrientsUsda.
         :rtype: str
@@ -335,7 +335,7 @@ class BrandedFoodObjectNutrientsUsda(Model):
     def description(self, description: str):
         """Sets the description of this BrandedFoodObjectNutrientsUsda.
 
-        Description of how the food nutrient value was obtained  # noqa: E501
+        Description of the nutrient source  # noqa: E501
 
         :param description: The description of this BrandedFoodObjectNutrientsUsda.
         :type description: str
