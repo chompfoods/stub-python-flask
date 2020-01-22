@@ -14,33 +14,28 @@ class BrandedFoodObjectServing(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, size: int=None, measurement_unit: str=None, size_fulltext: str=None, total: int=None):  # noqa: E501
+    def __init__(self, size: str=None, size_fulltext: str=None, total: int=None):  # noqa: E501
         """BrandedFoodObjectServing - a model defined in Swagger
 
         :param size: The size of this BrandedFoodObjectServing.  # noqa: E501
-        :type size: int
-        :param measurement_unit: The measurement_unit of this BrandedFoodObjectServing.  # noqa: E501
-        :type measurement_unit: str
+        :type size: str
         :param size_fulltext: The size_fulltext of this BrandedFoodObjectServing.  # noqa: E501
         :type size_fulltext: str
         :param total: The total of this BrandedFoodObjectServing.  # noqa: E501
         :type total: int
         """
         self.swagger_types = {
-            'size': int,
-            'measurement_unit': str,
+            'size': str,
             'size_fulltext': str,
             'total': int
         }
 
         self.attribute_map = {
             'size': 'size',
-            'measurement_unit': 'measurement_unit',
             'size_fulltext': 'size_fulltext',
             'total': 'total'
         }
         self._size = size
-        self._measurement_unit = measurement_unit
         self._size_fulltext = size_fulltext
         self._total = total
 
@@ -56,50 +51,27 @@ class BrandedFoodObjectServing(Model):
         return util.deserialize_model(dikt, cls)
 
     @property
-    def size(self) -> int:
+    def size(self) -> str:
         """Gets the size of this BrandedFoodObjectServing.
 
-        Serving size  # noqa: E501
+        Serving size with measurement unit (e.g. if measure is 3 tsp, the unit is tsp)  # noqa: E501
 
         :return: The size of this BrandedFoodObjectServing.
-        :rtype: int
+        :rtype: str
         """
         return self._size
 
     @size.setter
-    def size(self, size: int):
+    def size(self, size: str):
         """Sets the size of this BrandedFoodObjectServing.
 
-        Serving size  # noqa: E501
+        Serving size with measurement unit (e.g. if measure is 3 tsp, the unit is tsp)  # noqa: E501
 
         :param size: The size of this BrandedFoodObjectServing.
-        :type size: int
+        :type size: str
         """
 
         self._size = size
-
-    @property
-    def measurement_unit(self) -> str:
-        """Gets the measurement_unit of this BrandedFoodObjectServing.
-
-        Serving measurement unit (e.g. if measure is 3 tsp, the unit is tsp)  # noqa: E501
-
-        :return: The measurement_unit of this BrandedFoodObjectServing.
-        :rtype: str
-        """
-        return self._measurement_unit
-
-    @measurement_unit.setter
-    def measurement_unit(self, measurement_unit: str):
-        """Sets the measurement_unit of this BrandedFoodObjectServing.
-
-        Serving measurement unit (e.g. if measure is 3 tsp, the unit is tsp)  # noqa: E501
-
-        :param measurement_unit: The measurement_unit of this BrandedFoodObjectServing.
-        :type measurement_unit: str
-        """
-
-        self._measurement_unit = measurement_unit
 
     @property
     def size_fulltext(self) -> str:
