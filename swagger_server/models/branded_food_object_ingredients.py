@@ -72,7 +72,7 @@ class BrandedFoodObjectIngredients(Model):
     def usda(self) -> str:
         """Gets the usda of this BrandedFoodObjectIngredients.
 
-        This branded food item's ingredients according to the USDA  # noqa: E501
+        This branded food item's ingredients, according to the USDA  # noqa: E501
 
         :return: The usda of this BrandedFoodObjectIngredients.
         :rtype: str
@@ -83,7 +83,7 @@ class BrandedFoodObjectIngredients(Model):
     def usda(self, usda: str):
         """Sets the usda of this BrandedFoodObjectIngredients.
 
-        This branded food item's ingredients according to the USDA  # noqa: E501
+        This branded food item's ingredients, according to the USDA  # noqa: E501
 
         :param usda: The usda of this BrandedFoodObjectIngredients.
         :type usda: str

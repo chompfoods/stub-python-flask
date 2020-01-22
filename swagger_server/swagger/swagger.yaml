@@ -2,7 +2,7 @@ openapi: 3.0.0
 info:
   title: Chomp Food Database API Documentation
   description: "__Important:__\n  - An __[API key](https://chompthis.com/api/)__ is\
-    \ required for access to this API.\n  - Get yours at __[https://chompthis.com/api](https://chompthis.com/api/)__.\n\
+    \ required for access to this API. Get yours at __[https://chompthis.com/api](https://chompthis.com/api/)__.\n\
     \n-----\n\n__Getting Started:__\n  - __[Subscribe](https://chompthis.com/api/#pricing)__\
     \ to the API.\n  - Scroll down and click the \"__Authorize__\" button.\n  - Enter\
     \ your API key into the \"__value__\" input, click the \"__Authorize__\" button,\
@@ -919,12 +919,12 @@ components:
               compatibility_level: 5
               is_compatible: true
           name: name
+          common_names: common_names
           description: description
           categories:
           - categories
           - categories
           footnote: footnote
-          common_name: common_name
           nutrients:
             usda:
             - data_points: 4
@@ -998,12 +998,12 @@ components:
               compatibility_level: 5
               is_compatible: true
           name: name
+          common_names: common_names
           description: description
           categories:
           - categories
           - categories
           footnote: footnote
-          common_name: common_name
           nutrients:
             usda:
             - data_points: 4
@@ -1049,7 +1049,7 @@ components:
           description: Ingredients for this item from Chomp's internal database
         usda:
           type: string
-          description: This branded food item's ingredients according to the USDA
+          description: This branded food item's ingredients, according to the USDA
       description: An object containing this item's ingredients in order of highest
         value to least
       example:
@@ -1910,7 +1910,7 @@ components:
             of a food found in this item
           items:
             $ref: '#/components/schemas/BrandedFoodObject_portions'
-        common_name:
+        common_names:
           type: string
           description: Common names associated with this item. These generally clarify
             what the item is (e.g. when the brand name is "BRAND's Spicy Enchilada"
@@ -1960,12 +1960,12 @@ components:
             compatibility_level: 5
             is_compatible: true
         name: name
+        common_names: common_names
         description: description
         categories:
         - categories
         - categories
         footnote: footnote
-        common_name: common_name
         nutrients:
           usda:
           - data_points: 4

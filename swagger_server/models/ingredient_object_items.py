@@ -19,7 +19,7 @@ class IngredientObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, name: str=None, categories: List[str]=None, nutrients: IngredientObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, common_name: str=None, description: str=None, footnote: str=None):  # noqa: E501
+    def __init__(self, name: str=None, categories: List[str]=None, nutrients: IngredientObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, common_names: str=None, description: str=None, footnote: str=None):  # noqa: E501
         """IngredientObjectItems - a model defined in Swagger
 
         :param name: The name of this IngredientObjectItems.  # noqa: E501
@@ -38,8 +38,8 @@ class IngredientObjectItems(Model):
         :type components: List[BrandedFoodObjectComponents]
         :param portions: The portions of this IngredientObjectItems.  # noqa: E501
         :type portions: List[BrandedFoodObjectPortions]
-        :param common_name: The common_name of this IngredientObjectItems.  # noqa: E501
-        :type common_name: str
+        :param common_names: The common_names of this IngredientObjectItems.  # noqa: E501
+        :type common_names: str
         :param description: The description of this IngredientObjectItems.  # noqa: E501
         :type description: str
         :param footnote: The footnote of this IngredientObjectItems.  # noqa: E501
@@ -54,7 +54,7 @@ class IngredientObjectItems(Model):
             'diet_labels': BrandedFoodObjectDietLabels,
             'components': List[BrandedFoodObjectComponents],
             'portions': List[BrandedFoodObjectPortions],
-            'common_name': str,
+            'common_names': str,
             'description': str,
             'footnote': str
         }
@@ -68,7 +68,7 @@ class IngredientObjectItems(Model):
             'diet_labels': 'diet_labels',
             'components': 'components',
             'portions': 'portions',
-            'common_name': 'common_name',
+            'common_names': 'common_names',
             'description': 'description',
             'footnote': 'footnote'
         }
@@ -80,7 +80,7 @@ class IngredientObjectItems(Model):
         self._diet_labels = diet_labels
         self._components = components
         self._portions = portions
-        self._common_name = common_name
+        self._common_names = common_names
         self._description = description
         self._footnote = footnote
 
@@ -272,27 +272,27 @@ class IngredientObjectItems(Model):
         self._portions = portions
 
     @property
-    def common_name(self) -> str:
-        """Gets the common_name of this IngredientObjectItems.
+    def common_names(self) -> str:
+        """Gets the common_names of this IngredientObjectItems.
 
         Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")  # noqa: E501
 
-        :return: The common_name of this IngredientObjectItems.
+        :return: The common_names of this IngredientObjectItems.
         :rtype: str
         """
-        return self._common_name
+        return self._common_names
 
-    @common_name.setter
-    def common_name(self, common_name: str):
-        """Sets the common_name of this IngredientObjectItems.
+    @common_names.setter
+    def common_names(self, common_names: str):
+        """Sets the common_names of this IngredientObjectItems.
 
         Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")  # noqa: E501
 
-        :param common_name: The common_name of this IngredientObjectItems.
-        :type common_name: str
+        :param common_names: The common_names of this IngredientObjectItems.
+        :type common_names: str
         """
 
-        self._common_name = common_name
+        self._common_names = common_names
 
     @property
     def description(self) -> str:
