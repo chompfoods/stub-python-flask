@@ -11,6 +11,7 @@ from swagger_server.models.branded_food_object_components import BrandedFoodObje
 from swagger_server.models.branded_food_object_country_details import BrandedFoodObjectCountryDetails  # noqa: F401,E501
 from swagger_server.models.branded_food_object_diet_flags import BrandedFoodObjectDietFlags  # noqa: F401,E501
 from swagger_server.models.branded_food_object_diet_labels import BrandedFoodObjectDietLabels  # noqa: F401,E501
+from swagger_server.models.branded_food_object_ingredients import BrandedFoodObjectIngredients  # noqa: F401,E501
 from swagger_server.models.branded_food_object_nutrients import BrandedFoodObjectNutrients  # noqa: F401,E501
 from swagger_server.models.branded_food_object_package import BrandedFoodObjectPackage  # noqa: F401,E501
 from swagger_server.models.branded_food_object_packaging_photos import BrandedFoodObjectPackagingPhotos  # noqa: F401,E501
@@ -24,7 +25,7 @@ class BrandedFoodObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: str=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, common_name: str=None, description: str=None, keywords: List[str]=None, footnote: str=None):  # noqa: E501
+    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: BrandedFoodObjectIngredients=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, common_name: str=None, description: str=None, keywords: List[str]=None, footnote: str=None):  # noqa: E501
         """BrandedFoodObjectItems - a model defined in Swagger
 
         :param barcode: The barcode of this BrandedFoodObjectItems.  # noqa: E501
@@ -34,7 +35,7 @@ class BrandedFoodObjectItems(Model):
         :param brand: The brand of this BrandedFoodObjectItems.  # noqa: E501
         :type brand: str
         :param ingredients: The ingredients of this BrandedFoodObjectItems.  # noqa: E501
-        :type ingredients: str
+        :type ingredients: BrandedFoodObjectIngredients
         :param package: The package of this BrandedFoodObjectItems.  # noqa: E501
         :type package: BrandedFoodObjectPackage
         :param serving: The serving of this BrandedFoodObjectItems.  # noqa: E501
@@ -90,7 +91,7 @@ class BrandedFoodObjectItems(Model):
             'barcode': str,
             'name': str,
             'brand': str,
-            'ingredients': str,
+            'ingredients': BrandedFoodObjectIngredients,
             'package': BrandedFoodObjectPackage,
             'serving': BrandedFoodObjectServing,
             'categories': List[str],
@@ -260,24 +261,22 @@ class BrandedFoodObjectItems(Model):
         self._brand = brand
 
     @property
-    def ingredients(self) -> str:
+    def ingredients(self) -> BrandedFoodObjectIngredients:
         """Gets the ingredients of this BrandedFoodObjectItems.
 
-        Ingredients in order of highest value to least  # noqa: E501
 
         :return: The ingredients of this BrandedFoodObjectItems.
-        :rtype: str
+        :rtype: BrandedFoodObjectIngredients
         """
         return self._ingredients
 
     @ingredients.setter
-    def ingredients(self, ingredients: str):
+    def ingredients(self, ingredients: BrandedFoodObjectIngredients):
         """Sets the ingredients of this BrandedFoodObjectItems.
 
-        Ingredients in order of highest value to least  # noqa: E501
 
         :param ingredients: The ingredients of this BrandedFoodObjectItems.
-        :type ingredients: str
+        :type ingredients: BrandedFoodObjectIngredients
         """
 
         self._ingredients = ingredients

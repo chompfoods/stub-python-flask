@@ -14,17 +14,17 @@ class BrandedFoodObjectPackage(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, quantity: int=None, size: int=None):  # noqa: E501
+    def __init__(self, quantity: int=None, size: str=None):  # noqa: E501
         """BrandedFoodObjectPackage - a model defined in Swagger
 
         :param quantity: The quantity of this BrandedFoodObjectPackage.  # noqa: E501
         :type quantity: int
         :param size: The size of this BrandedFoodObjectPackage.  # noqa: E501
-        :type size: int
+        :type size: str
         """
         self.swagger_types = {
             'quantity': int,
-            'size': int
+            'size': str
         }
 
         self.attribute_map = {
@@ -69,24 +69,24 @@ class BrandedFoodObjectPackage(Model):
         self._quantity = quantity
 
     @property
-    def size(self) -> int:
+    def size(self) -> str:
         """Gets the size of this BrandedFoodObjectPackage.
 
         Package size  # noqa: E501
 
         :return: The size of this BrandedFoodObjectPackage.
-        :rtype: int
+        :rtype: str
         """
         return self._size
 
     @size.setter
-    def size(self, size: int):
+    def size(self, size: str):
         """Sets the size of this BrandedFoodObjectPackage.
 
         Package size  # noqa: E501
 
         :param size: The size of this BrandedFoodObjectPackage.
-        :type size: int
+        :type size: str
         """
 
         self._size = size

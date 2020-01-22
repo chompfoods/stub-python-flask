@@ -541,21 +541,21 @@ components:
           - minerals
           - minerals
           components:
-          - data_points: 6
-            pct_weight: 6.438423552598546706349225132726132869720458984375
-            gram_weight: 3.557195227068097320710649000830017030239105224609375
+          - data_points: 3
+            pct_weight: 9.0183481860707832566959041287191212177276611328125
+            gram_weight: 6.438423552598546706349225132726132869720458984375
             name: name
             is_refuse: true
-          - data_points: 6
-            pct_weight: 6.438423552598546706349225132726132869720458984375
-            gram_weight: 3.557195227068097320710649000830017030239105224609375
+          - data_points: 3
+            pct_weight: 9.0183481860707832566959041287191212177276611328125
+            gram_weight: 6.438423552598546706349225132726132869720458984375
             name: name
             is_refuse: true
           keywords:
           - keywords
           - keywords
           country_details:
-            english_speaking: 6
+            english_speaking: 2
             non_english_speaking: 6
           description: description
           has_english_ingredients: true
@@ -563,46 +563,46 @@ components:
           - palm_oil_ingredients
           - palm_oil_ingredients
           serving:
-            total: 5
+            total: 1
             size_fulltext: size_fulltext
-            size: 1
+            size: 6
             measurement_unit: measurement_unit
           nutrients:
             chomp:
-            - total: 7.061401241503109105224211816675961017608642578125
+            - total: 2.3021358869347654518833223846741020679473876953125
               name: name
               measurement_unit: measurement_unit
-              per_100g: 5.63737665663332876420099637471139430999755859375
-              per_serving: 2.3021358869347654518833223846741020679473876953125
-            - total: 7.061401241503109105224211816675961017608642578125
+              per_100g: 5.962133916683182377482808078639209270477294921875
+              per_serving: 5.63737665663332876420099637471139430999755859375
+            - total: 2.3021358869347654518833223846741020679473876953125
               name: name
               measurement_unit: measurement_unit
-              per_100g: 5.63737665663332876420099637471139430999755859375
-              per_serving: 2.3021358869347654518833223846741020679473876953125
+              per_100g: 5.962133916683182377482808078639209270477294921875
+              per_serving: 5.63737665663332876420099637471139430999755859375
             usda:
             - data_points: 1
-              min: 2.027123023002321833274663731572218239307403564453125
-              median: 7.3862819483858839220147274318151175975799560546875
-              max: 4.1456080298839363962315474054776132106781005859375
+              min: 3.61607674925191080461672754609026014804840087890625
+              median: 4.1456080298839363962315474054776132106781005859375
+              max: 2.027123023002321833274663731572218239307403564453125
               name: name
               measurement_unit: measurement_unit
-              rank: 1
+              rank: 7
               description: description
-              id: 9
-              per_100g: 3.61607674925191080461672754609026014804840087890625
+              id: 7
+              per_100g: 9.301444243932575517419536481611430644989013671875
               footnote: footnote
             - data_points: 1
-              min: 2.027123023002321833274663731572218239307403564453125
-              median: 7.3862819483858839220147274318151175975799560546875
-              max: 4.1456080298839363962315474054776132106781005859375
+              min: 3.61607674925191080461672754609026014804840087890625
+              median: 4.1456080298839363962315474054776132106781005859375
+              max: 2.027123023002321833274663731572218239307403564453125
               name: name
               measurement_unit: measurement_unit
-              rank: 1
+              rank: 7
               description: description
-              id: 9
-              per_100g: 3.61607674925191080461672754609026014804840087890625
+              id: 7
+              per_100g: 9.301444243932575517419536481611430644989013671875
               footnote: footnote
-          protein_conversion_factor: 1.173074250955943309548956676735542714595794677734375
+          protein_conversion_factor: 7.4577447736837658709418974467553198337554931640625
           packaging_photos:
             nutrition:
               small: small
@@ -621,21 +621,23 @@ components:
               confidence_description: confidence_description
               confidence: 9
               name: name
-              compatibility_level: 9
+              compatibility_level: 5
               is_compatible: true
             vegan:
               confidence_description: confidence_description
-              confidence: 5
+              confidence: 4
               name: name
-              compatibility_level: 4
+              compatibility_level: 1
               is_compatible: true
             gluten_free:
               confidence_description: confidence_description
-              confidence: 8
+              confidence: 6
               name: name
-              compatibility_level: 6
+              compatibility_level: 9
               is_compatible: true
-          ingredients: ingredients
+          ingredients:
+            chomp: chomp
+            usda: usda
           categories:
           - categories
           - categories
@@ -643,21 +645,21 @@ components:
           barcode: barcode
           brand: brand
           portions:
-          - data_points: 2
+          - data_points: 1
             modifier: modifier
-            gram_weight: 1.2846590061165319429647979632136411964893341064453125
+            gram_weight: 6.96511769763884558415156789124011993408203125
             measurement_unit: measurement_unit
             description: description
             footnote: footnote
-          - data_points: 2
+          - data_points: 1
             modifier: modifier
-            gram_weight: 1.2846590061165319429647979632136411964893341064453125
+            gram_weight: 6.96511769763884558415156789124011993408203125
             measurement_unit: measurement_unit
             description: description
             footnote: footnote
           package:
             quantity: 0
-            size: 6
+            size: size
           traces:
           - traces
           - traces
@@ -665,14 +667,14 @@ components:
           - ingredient: ingredient
             is_allergen: true
             ingredient_description: ingredient_description
-            compatibility_level: 9
+            compatibility_level: 8
             is_compatible: is_compatible
             diet_label: diet_label
             compatibility_description: compatibility_description
           - ingredient: ingredient
             is_allergen: true
             ingredient_description: ingredient_description
-            compatibility_level: 9
+            compatibility_level: 8
             is_compatible: is_compatible
             diet_label: diet_label
             compatibility_description: compatibility_description
@@ -684,9 +686,9 @@ components:
           - allergens
           - allergens
           calorie_conversion_factor:
-            carbohydrate_value: 7.4577447736837658709418974467553198337554931640625
-            protein_value: 1.489415909854170383397331534069962799549102783203125
-            fat_value: 6.8468526983526398765889098285697400569915771484375
+            carbohydrate_value: 6.8468526983526398765889098285697400569915771484375
+            protein_value: 1.024645700144157789424070870154537260532379150390625
+            fat_value: 1.489415909854170383397331534069962799549102783203125
           ingredient_list:
           - ingredient_list
           - ingredient_list
@@ -701,21 +703,21 @@ components:
           - minerals
           - minerals
           components:
-          - data_points: 6
-            pct_weight: 6.438423552598546706349225132726132869720458984375
-            gram_weight: 3.557195227068097320710649000830017030239105224609375
+          - data_points: 3
+            pct_weight: 9.0183481860707832566959041287191212177276611328125
+            gram_weight: 6.438423552598546706349225132726132869720458984375
             name: name
             is_refuse: true
-          - data_points: 6
-            pct_weight: 6.438423552598546706349225132726132869720458984375
-            gram_weight: 3.557195227068097320710649000830017030239105224609375
+          - data_points: 3
+            pct_weight: 9.0183481860707832566959041287191212177276611328125
+            gram_weight: 6.438423552598546706349225132726132869720458984375
             name: name
             is_refuse: true
           keywords:
           - keywords
           - keywords
           country_details:
-            english_speaking: 6
+            english_speaking: 2
             non_english_speaking: 6
           description: description
           has_english_ingredients: true
@@ -723,46 +725,46 @@ components:
           - palm_oil_ingredients
           - palm_oil_ingredients
           serving:
-            total: 5
+            total: 1
             size_fulltext: size_fulltext
-            size: 1
+            size: 6
             measurement_unit: measurement_unit
           nutrients:
             chomp:
-            - total: 7.061401241503109105224211816675961017608642578125
+            - total: 2.3021358869347654518833223846741020679473876953125
               name: name
               measurement_unit: measurement_unit
-              per_100g: 5.63737665663332876420099637471139430999755859375
-              per_serving: 2.3021358869347654518833223846741020679473876953125
-            - total: 7.061401241503109105224211816675961017608642578125
+              per_100g: 5.962133916683182377482808078639209270477294921875
+              per_serving: 5.63737665663332876420099637471139430999755859375
+            - total: 2.3021358869347654518833223846741020679473876953125
               name: name
               measurement_unit: measurement_unit
-              per_100g: 5.63737665663332876420099637471139430999755859375
-              per_serving: 2.3021358869347654518833223846741020679473876953125
+              per_100g: 5.962133916683182377482808078639209270477294921875
+              per_serving: 5.63737665663332876420099637471139430999755859375
             usda:
             - data_points: 1
-              min: 2.027123023002321833274663731572218239307403564453125
-              median: 7.3862819483858839220147274318151175975799560546875
-              max: 4.1456080298839363962315474054776132106781005859375
+              min: 3.61607674925191080461672754609026014804840087890625
+              median: 4.1456080298839363962315474054776132106781005859375
+              max: 2.027123023002321833274663731572218239307403564453125
               name: name
               measurement_unit: measurement_unit
-              rank: 1
+              rank: 7
               description: description
-              id: 9
-              per_100g: 3.61607674925191080461672754609026014804840087890625
+              id: 7
+              per_100g: 9.301444243932575517419536481611430644989013671875
               footnote: footnote
             - data_points: 1
-              min: 2.027123023002321833274663731572218239307403564453125
-              median: 7.3862819483858839220147274318151175975799560546875
-              max: 4.1456080298839363962315474054776132106781005859375
+              min: 3.61607674925191080461672754609026014804840087890625
+              median: 4.1456080298839363962315474054776132106781005859375
+              max: 2.027123023002321833274663731572218239307403564453125
               name: name
               measurement_unit: measurement_unit
-              rank: 1
+              rank: 7
               description: description
-              id: 9
-              per_100g: 3.61607674925191080461672754609026014804840087890625
+              id: 7
+              per_100g: 9.301444243932575517419536481611430644989013671875
               footnote: footnote
-          protein_conversion_factor: 1.173074250955943309548956676735542714595794677734375
+          protein_conversion_factor: 7.4577447736837658709418974467553198337554931640625
           packaging_photos:
             nutrition:
               small: small
@@ -781,21 +783,23 @@ components:
               confidence_description: confidence_description
               confidence: 9
               name: name
-              compatibility_level: 9
+              compatibility_level: 5
               is_compatible: true
             vegan:
               confidence_description: confidence_description
-              confidence: 5
+              confidence: 4
               name: name
-              compatibility_level: 4
+              compatibility_level: 1
               is_compatible: true
             gluten_free:
               confidence_description: confidence_description
-              confidence: 8
+              confidence: 6
               name: name
-              compatibility_level: 6
+              compatibility_level: 9
               is_compatible: true
-          ingredients: ingredients
+          ingredients:
+            chomp: chomp
+            usda: usda
           categories:
           - categories
           - categories
@@ -803,21 +807,21 @@ components:
           barcode: barcode
           brand: brand
           portions:
-          - data_points: 2
+          - data_points: 1
             modifier: modifier
-            gram_weight: 1.2846590061165319429647979632136411964893341064453125
+            gram_weight: 6.96511769763884558415156789124011993408203125
             measurement_unit: measurement_unit
             description: description
             footnote: footnote
-          - data_points: 2
+          - data_points: 1
             modifier: modifier
-            gram_weight: 1.2846590061165319429647979632136411964893341064453125
+            gram_weight: 6.96511769763884558415156789124011993408203125
             measurement_unit: measurement_unit
             description: description
             footnote: footnote
           package:
             quantity: 0
-            size: 6
+            size: size
           traces:
           - traces
           - traces
@@ -825,14 +829,14 @@ components:
           - ingredient: ingredient
             is_allergen: true
             ingredient_description: ingredient_description
-            compatibility_level: 9
+            compatibility_level: 8
             is_compatible: is_compatible
             diet_label: diet_label
             compatibility_description: compatibility_description
           - ingredient: ingredient
             is_allergen: true
             ingredient_description: ingredient_description
-            compatibility_level: 9
+            compatibility_level: 8
             is_compatible: is_compatible
             diet_label: diet_label
             compatibility_description: compatibility_description
@@ -844,9 +848,9 @@ components:
           - allergens
           - allergens
           calorie_conversion_factor:
-            carbohydrate_value: 7.4577447736837658709418974467553198337554931640625
-            protein_value: 1.489415909854170383397331534069962799549102783203125
-            fat_value: 6.8468526983526398765889098285697400569915771484375
+            carbohydrate_value: 6.8468526983526398765889098285697400569915771484375
+            protein_value: 1.024645700144157789424070870154537260532379150390625
+            fat_value: 1.489415909854170383397331534069962799549102783203125
           ingredient_list:
           - ingredient_list
           - ingredient_list
@@ -873,18 +877,18 @@ components:
         items:
         - protein_conversion_factor: 0.80082819046101150206595775671303272247314453125
           calorie_conversion_factor:
-            carbohydrate_value: 7.4577447736837658709418974467553198337554931640625
-            protein_value: 1.489415909854170383397331534069962799549102783203125
-            fat_value: 6.8468526983526398765889098285697400569915771484375
+            carbohydrate_value: 6.8468526983526398765889098285697400569915771484375
+            protein_value: 1.024645700144157789424070870154537260532379150390625
+            fat_value: 1.489415909854170383397331534069962799549102783203125
           components:
-          - data_points: 6
-            pct_weight: 6.438423552598546706349225132726132869720458984375
-            gram_weight: 3.557195227068097320710649000830017030239105224609375
+          - data_points: 3
+            pct_weight: 9.0183481860707832566959041287191212177276611328125
+            gram_weight: 6.438423552598546706349225132726132869720458984375
             name: name
             is_refuse: true
-          - data_points: 6
-            pct_weight: 6.438423552598546706349225132726132869720458984375
-            gram_weight: 3.557195227068097320710649000830017030239105224609375
+          - data_points: 3
+            pct_weight: 9.0183481860707832566959041287191212177276611328125
+            gram_weight: 6.438423552598546706349225132726132869720458984375
             name: name
             is_refuse: true
           diet_labels:
@@ -892,19 +896,19 @@ components:
               confidence_description: confidence_description
               confidence: 9
               name: name
-              compatibility_level: 9
+              compatibility_level: 5
               is_compatible: true
             vegan:
               confidence_description: confidence_description
-              confidence: 5
+              confidence: 4
               name: name
-              compatibility_level: 4
+              compatibility_level: 1
               is_compatible: true
             gluten_free:
               confidence_description: confidence_description
-              confidence: 8
+              confidence: 6
               name: name
-              compatibility_level: 6
+              compatibility_level: 9
               is_compatible: true
           name: name
           description: description
@@ -916,54 +920,54 @@ components:
           nutrients:
             usda:
             - data_points: 1
-              min: 2.027123023002321833274663731572218239307403564453125
-              median: 7.3862819483858839220147274318151175975799560546875
-              max: 4.1456080298839363962315474054776132106781005859375
+              min: 3.61607674925191080461672754609026014804840087890625
+              median: 4.1456080298839363962315474054776132106781005859375
+              max: 2.027123023002321833274663731572218239307403564453125
               name: name
               measurement_unit: measurement_unit
-              rank: 1
+              rank: 7
               description: description
-              id: 9
-              per_100g: 3.61607674925191080461672754609026014804840087890625
+              id: 7
+              per_100g: 9.301444243932575517419536481611430644989013671875
               footnote: footnote
             - data_points: 1
-              min: 2.027123023002321833274663731572218239307403564453125
-              median: 7.3862819483858839220147274318151175975799560546875
-              max: 4.1456080298839363962315474054776132106781005859375
+              min: 3.61607674925191080461672754609026014804840087890625
+              median: 4.1456080298839363962315474054776132106781005859375
+              max: 2.027123023002321833274663731572218239307403564453125
               name: name
               measurement_unit: measurement_unit
-              rank: 1
+              rank: 7
               description: description
-              id: 9
-              per_100g: 3.61607674925191080461672754609026014804840087890625
+              id: 7
+              per_100g: 9.301444243932575517419536481611430644989013671875
               footnote: footnote
           portions:
-          - data_points: 2
+          - data_points: 1
             modifier: modifier
-            gram_weight: 1.2846590061165319429647979632136411964893341064453125
+            gram_weight: 6.96511769763884558415156789124011993408203125
             measurement_unit: measurement_unit
             description: description
             footnote: footnote
-          - data_points: 2
+          - data_points: 1
             modifier: modifier
-            gram_weight: 1.2846590061165319429647979632136411964893341064453125
+            gram_weight: 6.96511769763884558415156789124011993408203125
             measurement_unit: measurement_unit
             description: description
             footnote: footnote
         - protein_conversion_factor: 0.80082819046101150206595775671303272247314453125
           calorie_conversion_factor:
-            carbohydrate_value: 7.4577447736837658709418974467553198337554931640625
-            protein_value: 1.489415909854170383397331534069962799549102783203125
-            fat_value: 6.8468526983526398765889098285697400569915771484375
+            carbohydrate_value: 6.8468526983526398765889098285697400569915771484375
+            protein_value: 1.024645700144157789424070870154537260532379150390625
+            fat_value: 1.489415909854170383397331534069962799549102783203125
           components:
-          - data_points: 6
-            pct_weight: 6.438423552598546706349225132726132869720458984375
-            gram_weight: 3.557195227068097320710649000830017030239105224609375
+          - data_points: 3
+            pct_weight: 9.0183481860707832566959041287191212177276611328125
+            gram_weight: 6.438423552598546706349225132726132869720458984375
             name: name
             is_refuse: true
-          - data_points: 6
-            pct_weight: 6.438423552598546706349225132726132869720458984375
-            gram_weight: 3.557195227068097320710649000830017030239105224609375
+          - data_points: 3
+            pct_weight: 9.0183481860707832566959041287191212177276611328125
+            gram_weight: 6.438423552598546706349225132726132869720458984375
             name: name
             is_refuse: true
           diet_labels:
@@ -971,19 +975,19 @@ components:
               confidence_description: confidence_description
               confidence: 9
               name: name
-              compatibility_level: 9
+              compatibility_level: 5
               is_compatible: true
             vegan:
               confidence_description: confidence_description
-              confidence: 5
+              confidence: 4
               name: name
-              compatibility_level: 4
+              compatibility_level: 1
               is_compatible: true
             gluten_free:
               confidence_description: confidence_description
-              confidence: 8
+              confidence: 6
               name: name
-              compatibility_level: 6
+              compatibility_level: 9
               is_compatible: true
           name: name
           description: description
@@ -995,40 +999,54 @@ components:
           nutrients:
             usda:
             - data_points: 1
-              min: 2.027123023002321833274663731572218239307403564453125
-              median: 7.3862819483858839220147274318151175975799560546875
-              max: 4.1456080298839363962315474054776132106781005859375
+              min: 3.61607674925191080461672754609026014804840087890625
+              median: 4.1456080298839363962315474054776132106781005859375
+              max: 2.027123023002321833274663731572218239307403564453125
               name: name
               measurement_unit: measurement_unit
-              rank: 1
+              rank: 7
               description: description
-              id: 9
-              per_100g: 3.61607674925191080461672754609026014804840087890625
+              id: 7
+              per_100g: 9.301444243932575517419536481611430644989013671875
               footnote: footnote
             - data_points: 1
-              min: 2.027123023002321833274663731572218239307403564453125
-              median: 7.3862819483858839220147274318151175975799560546875
-              max: 4.1456080298839363962315474054776132106781005859375
+              min: 3.61607674925191080461672754609026014804840087890625
+              median: 4.1456080298839363962315474054776132106781005859375
+              max: 2.027123023002321833274663731572218239307403564453125
               name: name
               measurement_unit: measurement_unit
-              rank: 1
+              rank: 7
               description: description
-              id: 9
-              per_100g: 3.61607674925191080461672754609026014804840087890625
+              id: 7
+              per_100g: 9.301444243932575517419536481611430644989013671875
               footnote: footnote
           portions:
-          - data_points: 2
+          - data_points: 1
             modifier: modifier
-            gram_weight: 1.2846590061165319429647979632136411964893341064453125
+            gram_weight: 6.96511769763884558415156789124011993408203125
             measurement_unit: measurement_unit
             description: description
             footnote: footnote
-          - data_points: 2
+          - data_points: 1
             modifier: modifier
-            gram_weight: 1.2846590061165319429647979632136411964893341064453125
+            gram_weight: 6.96511769763884558415156789124011993408203125
             measurement_unit: measurement_unit
             description: description
             footnote: footnote
+    BrandedFoodObject_ingredients:
+      type: object
+      properties:
+        chomp:
+          type: string
+          description: This item's ingredients as seen on ChompThis.com
+        usda:
+          type: string
+          description: This branded food item's ingredients according to the USDA
+      description: An object containing this item's ingredients in order of highest
+        value to least
+      example:
+        chomp: chomp
+        usda: usda
     BrandedFoodObject_package:
       type: object
       properties:
@@ -1036,12 +1054,12 @@ components:
           type: integer
           description: Package quantity
         size:
-          type: integer
+          type: string
           description: Package size
       description: An object containing basic packaging information about this item
       example:
         quantity: 0
-        size: 6
+        size: size
     BrandedFoodObject_serving:
       type: object
       properties:
@@ -1060,9 +1078,9 @@ components:
           description: Total servings
       description: An object containing serving information for this item
       example:
-        total: 5
+        total: 1
         size_fulltext: size_fulltext
-        size: 1
+        size: 6
         measurement_unit: measurement_unit
     BrandedFoodObject_nutrients_chomp:
       type: object
@@ -1084,11 +1102,11 @@ components:
           type: number
           description: Total nutrient value
       example:
-        total: 7.061401241503109105224211816675961017608642578125
+        total: 2.3021358869347654518833223846741020679473876953125
         name: name
         measurement_unit: measurement_unit
-        per_100g: 5.63737665663332876420099637471139430999755859375
-        per_serving: 2.3021358869347654518833223846741020679473876953125
+        per_100g: 5.962133916683182377482808078639209270477294921875
+        per_serving: 5.63737665663332876420099637471139430999755859375
     BrandedFoodObject_nutrients_usda:
       type: object
       properties:
@@ -1128,15 +1146,15 @@ components:
           description: Description of the nutrient source
       example:
         data_points: 1
-        min: 2.027123023002321833274663731572218239307403564453125
-        median: 7.3862819483858839220147274318151175975799560546875
-        max: 4.1456080298839363962315474054776132106781005859375
+        min: 3.61607674925191080461672754609026014804840087890625
+        median: 4.1456080298839363962315474054776132106781005859375
+        max: 2.027123023002321833274663731572218239307403564453125
         name: name
         measurement_unit: measurement_unit
-        rank: 1
+        rank: 7
         description: description
-        id: 9
-        per_100g: 3.61607674925191080461672754609026014804840087890625
+        id: 7
+        per_100g: 9.301444243932575517419536481611430644989013671875
         footnote: footnote
     BrandedFoodObject_nutrients:
       type: object
@@ -1155,38 +1173,38 @@ components:
       description: An object containing nutrient information from multiple sources
       example:
         chomp:
-        - total: 7.061401241503109105224211816675961017608642578125
+        - total: 2.3021358869347654518833223846741020679473876953125
           name: name
           measurement_unit: measurement_unit
-          per_100g: 5.63737665663332876420099637471139430999755859375
-          per_serving: 2.3021358869347654518833223846741020679473876953125
-        - total: 7.061401241503109105224211816675961017608642578125
+          per_100g: 5.962133916683182377482808078639209270477294921875
+          per_serving: 5.63737665663332876420099637471139430999755859375
+        - total: 2.3021358869347654518833223846741020679473876953125
           name: name
           measurement_unit: measurement_unit
-          per_100g: 5.63737665663332876420099637471139430999755859375
-          per_serving: 2.3021358869347654518833223846741020679473876953125
+          per_100g: 5.962133916683182377482808078639209270477294921875
+          per_serving: 5.63737665663332876420099637471139430999755859375
         usda:
         - data_points: 1
-          min: 2.027123023002321833274663731572218239307403564453125
-          median: 7.3862819483858839220147274318151175975799560546875
-          max: 4.1456080298839363962315474054776132106781005859375
+          min: 3.61607674925191080461672754609026014804840087890625
+          median: 4.1456080298839363962315474054776132106781005859375
+          max: 2.027123023002321833274663731572218239307403564453125
           name: name
           measurement_unit: measurement_unit
-          rank: 1
+          rank: 7
           description: description
-          id: 9
-          per_100g: 3.61607674925191080461672754609026014804840087890625
+          id: 7
+          per_100g: 9.301444243932575517419536481611430644989013671875
           footnote: footnote
         - data_points: 1
-          min: 2.027123023002321833274663731572218239307403564453125
-          median: 7.3862819483858839220147274318151175975799560546875
-          max: 4.1456080298839363962315474054776132106781005859375
+          min: 3.61607674925191080461672754609026014804840087890625
+          median: 4.1456080298839363962315474054776132106781005859375
+          max: 2.027123023002321833274663731572218239307403564453125
           name: name
           measurement_unit: measurement_unit
-          rank: 1
+          rank: 7
           description: description
-          id: 9
-          per_100g: 3.61607674925191080461672754609026014804840087890625
+          id: 7
+          per_100g: 9.301444243932575517419536481611430644989013671875
           footnote: footnote
     BrandedFoodObject_calorie_conversion_factor:
       type: object
@@ -1203,9 +1221,9 @@ components:
       description: An object containing the multiplication factors to be used when
         calculating energy from macronutrients for a specific food.
       example:
-        carbohydrate_value: 7.4577447736837658709418974467553198337554931640625
-        protein_value: 1.489415909854170383397331534069962799549102783203125
-        fat_value: 6.8468526983526398765889098285697400569915771484375
+        carbohydrate_value: 6.8468526983526398765889098285697400569915771484375
+        protein_value: 1.024645700144157789424070870154537260532379150390625
+        fat_value: 1.489415909854170383397331534069962799549102783203125
     BrandedFoodObject_diet_labels_vegan:
       type: object
       properties:
@@ -1230,9 +1248,9 @@ components:
         the Vegan diets
       example:
         confidence_description: confidence_description
-        confidence: 5
+        confidence: 4
         name: name
-        compatibility_level: 4
+        compatibility_level: 1
         is_compatible: true
     BrandedFoodObject_diet_labels_vegetarian:
       type: object
@@ -1260,7 +1278,7 @@ components:
         confidence_description: confidence_description
         confidence: 9
         name: name
-        compatibility_level: 9
+        compatibility_level: 5
         is_compatible: true
     BrandedFoodObject_diet_labels_gluten_free:
       type: object
@@ -1286,9 +1304,9 @@ components:
         Gluten Free diets
       example:
         confidence_description: confidence_description
-        confidence: 8
+        confidence: 6
         name: name
-        compatibility_level: 6
+        compatibility_level: 9
         is_compatible: true
     BrandedFoodObject_diet_labels:
       type: object
@@ -1306,19 +1324,19 @@ components:
           confidence_description: confidence_description
           confidence: 9
           name: name
-          compatibility_level: 9
+          compatibility_level: 5
           is_compatible: true
         vegan:
           confidence_description: confidence_description
-          confidence: 5
+          confidence: 4
           name: name
-          compatibility_level: 4
+          compatibility_level: 1
           is_compatible: true
         gluten_free:
           confidence_description: confidence_description
-          confidence: 8
+          confidence: 6
           name: name
-          compatibility_level: 6
+          compatibility_level: 9
           is_compatible: true
     BrandedFoodObject_diet_flags:
       type: object
@@ -1353,7 +1371,7 @@ components:
         ingredient: ingredient
         is_allergen: true
         ingredient_description: ingredient_description
-        compatibility_level: 9
+        compatibility_level: 8
         is_compatible: is_compatible
         diet_label: diet_label
         compatibility_description: compatibility_description
@@ -1453,9 +1471,9 @@ components:
       description: An object containing information on a specific component of this
         food item
       example:
-        data_points: 6
-        pct_weight: 6.438423552598546706349225132726132869720458984375
-        gram_weight: 3.557195227068097320710649000830017030239105224609375
+        data_points: 3
+        pct_weight: 9.0183481860707832566959041287191212177276611328125
+        gram_weight: 6.438423552598546706349225132726132869720458984375
         name: name
         is_refuse: true
     BrandedFoodObject_portions:
@@ -1488,9 +1506,9 @@ components:
       description: An object containing information on a specific food portion found
         in this item
       example:
-        data_points: 2
+        data_points: 1
         modifier: modifier
-        gram_weight: 1.2846590061165319429647979632136411964893341064453125
+        gram_weight: 6.96511769763884558415156789124011993408203125
         measurement_unit: measurement_unit
         description: description
         footnote: footnote
@@ -1508,7 +1526,7 @@ components:
       description: An object containing additional information on the countries where
         this item is found
       example:
-        english_speaking: 6
+        english_speaking: 2
         non_english_speaking: 6
     BrandedFoodObject_items:
       type: object
@@ -1523,8 +1541,7 @@ components:
           type: string
           description: The brand name that owns this item
         ingredients:
-          type: string
-          description: Ingredients in order of highest value to least
+          $ref: '#/components/schemas/BrandedFoodObject_ingredients'
         package:
           $ref: '#/components/schemas/BrandedFoodObject_package'
         serving:
@@ -1634,21 +1651,21 @@ components:
         - minerals
         - minerals
         components:
-        - data_points: 6
-          pct_weight: 6.438423552598546706349225132726132869720458984375
-          gram_weight: 3.557195227068097320710649000830017030239105224609375
+        - data_points: 3
+          pct_weight: 9.0183481860707832566959041287191212177276611328125
+          gram_weight: 6.438423552598546706349225132726132869720458984375
           name: name
           is_refuse: true
-        - data_points: 6
-          pct_weight: 6.438423552598546706349225132726132869720458984375
-          gram_weight: 3.557195227068097320710649000830017030239105224609375
+        - data_points: 3
+          pct_weight: 9.0183481860707832566959041287191212177276611328125
+          gram_weight: 6.438423552598546706349225132726132869720458984375
           name: name
           is_refuse: true
         keywords:
         - keywords
         - keywords
         country_details:
-          english_speaking: 6
+          english_speaking: 2
           non_english_speaking: 6
         description: description
         has_english_ingredients: true
@@ -1656,46 +1673,46 @@ components:
         - palm_oil_ingredients
         - palm_oil_ingredients
         serving:
-          total: 5
+          total: 1
           size_fulltext: size_fulltext
-          size: 1
+          size: 6
           measurement_unit: measurement_unit
         nutrients:
           chomp:
-          - total: 7.061401241503109105224211816675961017608642578125
+          - total: 2.3021358869347654518833223846741020679473876953125
             name: name
             measurement_unit: measurement_unit
-            per_100g: 5.63737665663332876420099637471139430999755859375
-            per_serving: 2.3021358869347654518833223846741020679473876953125
-          - total: 7.061401241503109105224211816675961017608642578125
+            per_100g: 5.962133916683182377482808078639209270477294921875
+            per_serving: 5.63737665663332876420099637471139430999755859375
+          - total: 2.3021358869347654518833223846741020679473876953125
             name: name
             measurement_unit: measurement_unit
-            per_100g: 5.63737665663332876420099637471139430999755859375
-            per_serving: 2.3021358869347654518833223846741020679473876953125
+            per_100g: 5.962133916683182377482808078639209270477294921875
+            per_serving: 5.63737665663332876420099637471139430999755859375
           usda:
           - data_points: 1
-            min: 2.027123023002321833274663731572218239307403564453125
-            median: 7.3862819483858839220147274318151175975799560546875
-            max: 4.1456080298839363962315474054776132106781005859375
+            min: 3.61607674925191080461672754609026014804840087890625
+            median: 4.1456080298839363962315474054776132106781005859375
+            max: 2.027123023002321833274663731572218239307403564453125
             name: name
             measurement_unit: measurement_unit
-            rank: 1
+            rank: 7
             description: description
-            id: 9
-            per_100g: 3.61607674925191080461672754609026014804840087890625
+            id: 7
+            per_100g: 9.301444243932575517419536481611430644989013671875
             footnote: footnote
           - data_points: 1
-            min: 2.027123023002321833274663731572218239307403564453125
-            median: 7.3862819483858839220147274318151175975799560546875
-            max: 4.1456080298839363962315474054776132106781005859375
+            min: 3.61607674925191080461672754609026014804840087890625
+            median: 4.1456080298839363962315474054776132106781005859375
+            max: 2.027123023002321833274663731572218239307403564453125
             name: name
             measurement_unit: measurement_unit
-            rank: 1
+            rank: 7
             description: description
-            id: 9
-            per_100g: 3.61607674925191080461672754609026014804840087890625
+            id: 7
+            per_100g: 9.301444243932575517419536481611430644989013671875
             footnote: footnote
-        protein_conversion_factor: 1.173074250955943309548956676735542714595794677734375
+        protein_conversion_factor: 7.4577447736837658709418974467553198337554931640625
         packaging_photos:
           nutrition:
             small: small
@@ -1714,21 +1731,23 @@ components:
             confidence_description: confidence_description
             confidence: 9
             name: name
-            compatibility_level: 9
+            compatibility_level: 5
             is_compatible: true
           vegan:
             confidence_description: confidence_description
-            confidence: 5
+            confidence: 4
             name: name
-            compatibility_level: 4
+            compatibility_level: 1
             is_compatible: true
           gluten_free:
             confidence_description: confidence_description
-            confidence: 8
+            confidence: 6
             name: name
-            compatibility_level: 6
+            compatibility_level: 9
             is_compatible: true
-        ingredients: ingredients
+        ingredients:
+          chomp: chomp
+          usda: usda
         categories:
         - categories
         - categories
@@ -1736,21 +1755,21 @@ components:
         barcode: barcode
         brand: brand
         portions:
-        - data_points: 2
+        - data_points: 1
           modifier: modifier
-          gram_weight: 1.2846590061165319429647979632136411964893341064453125
+          gram_weight: 6.96511769763884558415156789124011993408203125
           measurement_unit: measurement_unit
           description: description
           footnote: footnote
-        - data_points: 2
+        - data_points: 1
           modifier: modifier
-          gram_weight: 1.2846590061165319429647979632136411964893341064453125
+          gram_weight: 6.96511769763884558415156789124011993408203125
           measurement_unit: measurement_unit
           description: description
           footnote: footnote
         package:
           quantity: 0
-          size: 6
+          size: size
         traces:
         - traces
         - traces
@@ -1758,14 +1777,14 @@ components:
         - ingredient: ingredient
           is_allergen: true
           ingredient_description: ingredient_description
-          compatibility_level: 9
+          compatibility_level: 8
           is_compatible: is_compatible
           diet_label: diet_label
           compatibility_description: compatibility_description
         - ingredient: ingredient
           is_allergen: true
           ingredient_description: ingredient_description
-          compatibility_level: 9
+          compatibility_level: 8
           is_compatible: is_compatible
           diet_label: diet_label
           compatibility_description: compatibility_description
@@ -1777,9 +1796,9 @@ components:
         - allergens
         - allergens
         calorie_conversion_factor:
-          carbohydrate_value: 7.4577447736837658709418974467553198337554931640625
-          protein_value: 1.489415909854170383397331534069962799549102783203125
-          fat_value: 6.8468526983526398765889098285697400569915771484375
+          carbohydrate_value: 6.8468526983526398765889098285697400569915771484375
+          protein_value: 1.024645700144157789424070870154537260532379150390625
+          fat_value: 1.489415909854170383397331534069962799549102783203125
         ingredient_list:
         - ingredient_list
         - ingredient_list
@@ -1803,26 +1822,26 @@ components:
       example:
         usda:
         - data_points: 1
-          min: 2.027123023002321833274663731572218239307403564453125
-          median: 7.3862819483858839220147274318151175975799560546875
-          max: 4.1456080298839363962315474054776132106781005859375
+          min: 3.61607674925191080461672754609026014804840087890625
+          median: 4.1456080298839363962315474054776132106781005859375
+          max: 2.027123023002321833274663731572218239307403564453125
           name: name
           measurement_unit: measurement_unit
-          rank: 1
+          rank: 7
           description: description
-          id: 9
-          per_100g: 3.61607674925191080461672754609026014804840087890625
+          id: 7
+          per_100g: 9.301444243932575517419536481611430644989013671875
           footnote: footnote
         - data_points: 1
-          min: 2.027123023002321833274663731572218239307403564453125
-          median: 7.3862819483858839220147274318151175975799560546875
-          max: 4.1456080298839363962315474054776132106781005859375
+          min: 3.61607674925191080461672754609026014804840087890625
+          median: 4.1456080298839363962315474054776132106781005859375
+          max: 2.027123023002321833274663731572218239307403564453125
           name: name
           measurement_unit: measurement_unit
-          rank: 1
+          rank: 7
           description: description
-          id: 9
-          per_100g: 3.61607674925191080461672754609026014804840087890625
+          id: 7
+          per_100g: 9.301444243932575517419536481611430644989013671875
           footnote: footnote
     IngredientObject_items:
       type: object
@@ -1872,18 +1891,18 @@ components:
       example:
         protein_conversion_factor: 0.80082819046101150206595775671303272247314453125
         calorie_conversion_factor:
-          carbohydrate_value: 7.4577447736837658709418974467553198337554931640625
-          protein_value: 1.489415909854170383397331534069962799549102783203125
-          fat_value: 6.8468526983526398765889098285697400569915771484375
+          carbohydrate_value: 6.8468526983526398765889098285697400569915771484375
+          protein_value: 1.024645700144157789424070870154537260532379150390625
+          fat_value: 1.489415909854170383397331534069962799549102783203125
         components:
-        - data_points: 6
-          pct_weight: 6.438423552598546706349225132726132869720458984375
-          gram_weight: 3.557195227068097320710649000830017030239105224609375
+        - data_points: 3
+          pct_weight: 9.0183481860707832566959041287191212177276611328125
+          gram_weight: 6.438423552598546706349225132726132869720458984375
           name: name
           is_refuse: true
-        - data_points: 6
-          pct_weight: 6.438423552598546706349225132726132869720458984375
-          gram_weight: 3.557195227068097320710649000830017030239105224609375
+        - data_points: 3
+          pct_weight: 9.0183481860707832566959041287191212177276611328125
+          gram_weight: 6.438423552598546706349225132726132869720458984375
           name: name
           is_refuse: true
         diet_labels:
@@ -1891,19 +1910,19 @@ components:
             confidence_description: confidence_description
             confidence: 9
             name: name
-            compatibility_level: 9
+            compatibility_level: 5
             is_compatible: true
           vegan:
             confidence_description: confidence_description
-            confidence: 5
+            confidence: 4
             name: name
-            compatibility_level: 4
+            compatibility_level: 1
             is_compatible: true
           gluten_free:
             confidence_description: confidence_description
-            confidence: 8
+            confidence: 6
             name: name
-            compatibility_level: 6
+            compatibility_level: 9
             is_compatible: true
         name: name
         description: description
@@ -1915,37 +1934,37 @@ components:
         nutrients:
           usda:
           - data_points: 1
-            min: 2.027123023002321833274663731572218239307403564453125
-            median: 7.3862819483858839220147274318151175975799560546875
-            max: 4.1456080298839363962315474054776132106781005859375
+            min: 3.61607674925191080461672754609026014804840087890625
+            median: 4.1456080298839363962315474054776132106781005859375
+            max: 2.027123023002321833274663731572218239307403564453125
             name: name
             measurement_unit: measurement_unit
-            rank: 1
+            rank: 7
             description: description
-            id: 9
-            per_100g: 3.61607674925191080461672754609026014804840087890625
+            id: 7
+            per_100g: 9.301444243932575517419536481611430644989013671875
             footnote: footnote
           - data_points: 1
-            min: 2.027123023002321833274663731572218239307403564453125
-            median: 7.3862819483858839220147274318151175975799560546875
-            max: 4.1456080298839363962315474054776132106781005859375
+            min: 3.61607674925191080461672754609026014804840087890625
+            median: 4.1456080298839363962315474054776132106781005859375
+            max: 2.027123023002321833274663731572218239307403564453125
             name: name
             measurement_unit: measurement_unit
-            rank: 1
+            rank: 7
             description: description
-            id: 9
-            per_100g: 3.61607674925191080461672754609026014804840087890625
+            id: 7
+            per_100g: 9.301444243932575517419536481611430644989013671875
             footnote: footnote
         portions:
-        - data_points: 2
+        - data_points: 1
           modifier: modifier
-          gram_weight: 1.2846590061165319429647979632136411964893341064453125
+          gram_weight: 6.96511769763884558415156789124011993408203125
           measurement_unit: measurement_unit
           description: description
           footnote: footnote
-        - data_points: 2
+        - data_points: 1
           modifier: modifier
-          gram_weight: 1.2846590061165319429647979632136411964893341064453125
+          gram_weight: 6.96511769763884558415156789124011993408203125
           measurement_unit: measurement_unit
           description: description
           footnote: footnote
