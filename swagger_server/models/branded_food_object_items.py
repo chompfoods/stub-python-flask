@@ -25,7 +25,7 @@ class BrandedFoodObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: BrandedFoodObjectIngredients=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, common_names: List[str]=None, description: str=None, keywords: List[str]=None, footnote: str=None):  # noqa: E501
+    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: BrandedFoodObjectIngredients=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, description: str=None, keywords: List[str]=None, footnote: str=None):  # noqa: E501
         """BrandedFoodObjectItems - a model defined in Swagger
 
         :param barcode: The barcode of this BrandedFoodObjectItems.  # noqa: E501
@@ -78,8 +78,6 @@ class BrandedFoodObjectItems(Model):
         :type traces: List[str]
         :param vitamins: The vitamins of this BrandedFoodObjectItems.  # noqa: E501
         :type vitamins: List[str]
-        :param common_names: The common_names of this BrandedFoodObjectItems.  # noqa: E501
-        :type common_names: List[str]
         :param description: The description of this BrandedFoodObjectItems.  # noqa: E501
         :type description: str
         :param keywords: The keywords of this BrandedFoodObjectItems.  # noqa: E501
@@ -113,7 +111,6 @@ class BrandedFoodObjectItems(Model):
             'minerals': List[str],
             'traces': List[str],
             'vitamins': List[str],
-            'common_names': List[str],
             'description': str,
             'keywords': List[str],
             'footnote': str
@@ -145,7 +142,6 @@ class BrandedFoodObjectItems(Model):
             'minerals': 'minerals',
             'traces': 'traces',
             'vitamins': 'vitamins',
-            'common_names': 'common_names',
             'description': 'description',
             'keywords': 'keywords',
             'footnote': 'footnote'
@@ -175,7 +171,6 @@ class BrandedFoodObjectItems(Model):
         self._minerals = minerals
         self._traces = traces
         self._vitamins = vitamins
-        self._common_names = common_names
         self._description = description
         self._keywords = keywords
         self._footnote = footnote
@@ -747,29 +742,6 @@ class BrandedFoodObjectItems(Model):
         """
 
         self._vitamins = vitamins
-
-    @property
-    def common_names(self) -> List[str]:
-        """Gets the common_names of this BrandedFoodObjectItems.
-
-        An array containing other names commonly associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" a common name may be \"Chicken enchilada\")  # noqa: E501
-
-        :return: The common_names of this BrandedFoodObjectItems.
-        :rtype: List[str]
-        """
-        return self._common_names
-
-    @common_names.setter
-    def common_names(self, common_names: List[str]):
-        """Sets the common_names of this BrandedFoodObjectItems.
-
-        An array containing other names commonly associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" a common name may be \"Chicken enchilada\")  # noqa: E501
-
-        :param common_names: The common_names of this BrandedFoodObjectItems.
-        :type common_names: List[str]
-        """
-
-        self._common_names = common_names
 
     @property
     def description(self) -> str:
