@@ -706,7 +706,6 @@ components:
           countries:
           - countries
           - countries
-          footnote: footnote
           allergens:
           - allergens
           - allergens
@@ -845,7 +844,6 @@ components:
           countries:
           - countries
           - countries
-          footnote: footnote
           allergens:
           - allergens
           - allergens
@@ -1584,10 +1582,6 @@ components:
           description: An array of keywords that can be used to describe this item
           items:
             type: string
-        footnote:
-          type: string
-          description: Comments on any unusual aspects of this item. Examples might
-            include unusual aspects of the food overall.
       description: An object containing information for this specific item.
       example:
         minerals:
@@ -1711,7 +1705,6 @@ components:
         countries:
         - countries
         - countries
-        footnote: footnote
         allergens:
         - allergens
         - allergens

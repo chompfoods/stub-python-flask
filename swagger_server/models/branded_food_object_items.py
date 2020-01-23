@@ -23,7 +23,7 @@ class BrandedFoodObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: BrandedFoodObjectIngredients=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, description: str=None, keywords: List[str]=None, footnote: str=None):  # noqa: E501
+    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: BrandedFoodObjectIngredients=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, description: str=None, keywords: List[str]=None):  # noqa: E501
         """BrandedFoodObjectItems - a model defined in Swagger
 
         :param barcode: The barcode of this BrandedFoodObjectItems.  # noqa: E501
@@ -76,8 +76,6 @@ class BrandedFoodObjectItems(Model):
         :type description: str
         :param keywords: The keywords of this BrandedFoodObjectItems.  # noqa: E501
         :type keywords: List[str]
-        :param footnote: The footnote of this BrandedFoodObjectItems.  # noqa: E501
-        :type footnote: str
         """
         self.swagger_types = {
             'barcode': str,
@@ -104,8 +102,7 @@ class BrandedFoodObjectItems(Model):
             'traces': List[str],
             'vitamins': List[str],
             'description': str,
-            'keywords': List[str],
-            'footnote': str
+            'keywords': List[str]
         }
 
         self.attribute_map = {
@@ -133,8 +130,7 @@ class BrandedFoodObjectItems(Model):
             'traces': 'traces',
             'vitamins': 'vitamins',
             'description': 'description',
-            'keywords': 'keywords',
-            'footnote': 'footnote'
+            'keywords': 'keywords'
         }
         self._barcode = barcode
         self._name = name
@@ -161,7 +157,6 @@ class BrandedFoodObjectItems(Model):
         self._vitamins = vitamins
         self._description = description
         self._keywords = keywords
-        self._footnote = footnote
 
     @classmethod
     def from_dict(cls, dikt) -> 'BrandedFoodObjectItems':
@@ -730,26 +725,3 @@ class BrandedFoodObjectItems(Model):
         """
 
         self._keywords = keywords
-
-    @property
-    def footnote(self) -> str:
-        """Gets the footnote of this BrandedFoodObjectItems.
-
-        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.  # noqa: E501
-
-        :return: The footnote of this BrandedFoodObjectItems.
-        :rtype: str
-        """
-        return self._footnote
-
-    @footnote.setter
-    def footnote(self, footnote: str):
-        """Sets the footnote of this BrandedFoodObjectItems.
-
-        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.  # noqa: E501
-
-        :param footnote: The footnote of this BrandedFoodObjectItems.
-        :type footnote: str
-        """
-
-        self._footnote = footnote
