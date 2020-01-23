@@ -19,7 +19,7 @@ class IngredientObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, name: str=None, categories: List[str]=None, nutrients: IngredientObjectNutrients=None, calorie_conversion_factor: IngredientObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[IngredientObjectComponents]=None, portions: List[IngredientObjectPortions]=None, common_names: str=None, description: str=None, footnote: str=None):  # noqa: E501
+    def __init__(self, name: str=None, categories: List[str]=None, nutrients: List[IngredientObjectNutrients]=None, calorie_conversion_factor: IngredientObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[IngredientObjectComponents]=None, portions: List[IngredientObjectPortions]=None, common_names: str=None, description: str=None, footnote: str=None):  # noqa: E501
         """IngredientObjectItems - a model defined in Swagger
 
         :param name: The name of this IngredientObjectItems.  # noqa: E501
@@ -27,7 +27,7 @@ class IngredientObjectItems(Model):
         :param categories: The categories of this IngredientObjectItems.  # noqa: E501
         :type categories: List[str]
         :param nutrients: The nutrients of this IngredientObjectItems.  # noqa: E501
-        :type nutrients: IngredientObjectNutrients
+        :type nutrients: List[IngredientObjectNutrients]
         :param calorie_conversion_factor: The calorie_conversion_factor of this IngredientObjectItems.  # noqa: E501
         :type calorie_conversion_factor: IngredientObjectCalorieConversionFactor
         :param protein_conversion_factor: The protein_conversion_factor of this IngredientObjectItems.  # noqa: E501
@@ -48,7 +48,7 @@ class IngredientObjectItems(Model):
         self.swagger_types = {
             'name': str,
             'categories': List[str],
-            'nutrients': IngredientObjectNutrients,
+            'nutrients': List[IngredientObjectNutrients],
             'calorie_conversion_factor': IngredientObjectCalorieConversionFactor,
             'protein_conversion_factor': float,
             'diet_labels': BrandedFoodObjectDietLabels,
@@ -140,22 +140,24 @@ class IngredientObjectItems(Model):
         self._categories = categories
 
     @property
-    def nutrients(self) -> IngredientObjectNutrients:
+    def nutrients(self) -> List[IngredientObjectNutrients]:
         """Gets the nutrients of this IngredientObjectItems.
 
+        An array containing nutrient informatio objects for this food item  # noqa: E501
 
         :return: The nutrients of this IngredientObjectItems.
-        :rtype: IngredientObjectNutrients
+        :rtype: List[IngredientObjectNutrients]
         """
         return self._nutrients
 
     @nutrients.setter
-    def nutrients(self, nutrients: IngredientObjectNutrients):
+    def nutrients(self, nutrients: List[IngredientObjectNutrients]):
         """Sets the nutrients of this IngredientObjectItems.
 
+        An array containing nutrient informatio objects for this food item  # noqa: E501
 
         :param nutrients: The nutrients of this IngredientObjectItems.
-        :type nutrients: IngredientObjectNutrients
+        :type nutrients: List[IngredientObjectNutrients]
         """
 
         self._nutrients = nutrients

@@ -6,8 +6,6 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
-from swagger_server.models.branded_food_object_serving_chomp import BrandedFoodObjectServingChomp  # noqa: F401,E501
-from swagger_server.models.branded_food_object_serving_usda import BrandedFoodObjectServingUsda  # noqa: F401,E501
 from swagger_server import util
 
 
@@ -16,25 +14,30 @@ class BrandedFoodObjectServing(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, chomp: BrandedFoodObjectServingChomp=None, usda: BrandedFoodObjectServingUsda=None):  # noqa: E501
+    def __init__(self, size: str=None, measurement_unit: str=None, size_fulltext: str=None):  # noqa: E501
         """BrandedFoodObjectServing - a model defined in Swagger
 
-        :param chomp: The chomp of this BrandedFoodObjectServing.  # noqa: E501
-        :type chomp: BrandedFoodObjectServingChomp
-        :param usda: The usda of this BrandedFoodObjectServing.  # noqa: E501
-        :type usda: BrandedFoodObjectServingUsda
+        :param size: The size of this BrandedFoodObjectServing.  # noqa: E501
+        :type size: str
+        :param measurement_unit: The measurement_unit of this BrandedFoodObjectServing.  # noqa: E501
+        :type measurement_unit: str
+        :param size_fulltext: The size_fulltext of this BrandedFoodObjectServing.  # noqa: E501
+        :type size_fulltext: str
         """
         self.swagger_types = {
-            'chomp': BrandedFoodObjectServingChomp,
-            'usda': BrandedFoodObjectServingUsda
+            'size': str,
+            'measurement_unit': str,
+            'size_fulltext': str
         }
 
         self.attribute_map = {
-            'chomp': 'chomp',
-            'usda': 'usda'
+            'size': 'size',
+            'measurement_unit': 'measurement_unit',
+            'size_fulltext': 'size_fulltext'
         }
-        self._chomp = chomp
-        self._usda = usda
+        self._size = size
+        self._measurement_unit = measurement_unit
+        self._size_fulltext = size_fulltext
 
     @classmethod
     def from_dict(cls, dikt) -> 'BrandedFoodObjectServing':
@@ -48,43 +51,70 @@ class BrandedFoodObjectServing(Model):
         return util.deserialize_model(dikt, cls)
 
     @property
-    def chomp(self) -> BrandedFoodObjectServingChomp:
-        """Gets the chomp of this BrandedFoodObjectServing.
+    def size(self) -> str:
+        """Gets the size of this BrandedFoodObjectServing.
 
+        Serving size  # noqa: E501
 
-        :return: The chomp of this BrandedFoodObjectServing.
-        :rtype: BrandedFoodObjectServingChomp
+        :return: The size of this BrandedFoodObjectServing.
+        :rtype: str
         """
-        return self._chomp
+        return self._size
 
-    @chomp.setter
-    def chomp(self, chomp: BrandedFoodObjectServingChomp):
-        """Sets the chomp of this BrandedFoodObjectServing.
+    @size.setter
+    def size(self, size: str):
+        """Sets the size of this BrandedFoodObjectServing.
 
+        Serving size  # noqa: E501
 
-        :param chomp: The chomp of this BrandedFoodObjectServing.
-        :type chomp: BrandedFoodObjectServingChomp
+        :param size: The size of this BrandedFoodObjectServing.
+        :type size: str
         """
 
-        self._chomp = chomp
+        self._size = size
 
     @property
-    def usda(self) -> BrandedFoodObjectServingUsda:
-        """Gets the usda of this BrandedFoodObjectServing.
+    def measurement_unit(self) -> str:
+        """Gets the measurement_unit of this BrandedFoodObjectServing.
 
+        Measurement unit for each serving (e.g. if measure is 3 tsp, the unit is tsp)  # noqa: E501
 
-        :return: The usda of this BrandedFoodObjectServing.
-        :rtype: BrandedFoodObjectServingUsda
+        :return: The measurement_unit of this BrandedFoodObjectServing.
+        :rtype: str
         """
-        return self._usda
+        return self._measurement_unit
 
-    @usda.setter
-    def usda(self, usda: BrandedFoodObjectServingUsda):
-        """Sets the usda of this BrandedFoodObjectServing.
+    @measurement_unit.setter
+    def measurement_unit(self, measurement_unit: str):
+        """Sets the measurement_unit of this BrandedFoodObjectServing.
 
+        Measurement unit for each serving (e.g. if measure is 3 tsp, the unit is tsp)  # noqa: E501
 
-        :param usda: The usda of this BrandedFoodObjectServing.
-        :type usda: BrandedFoodObjectServingUsda
+        :param measurement_unit: The measurement_unit of this BrandedFoodObjectServing.
+        :type measurement_unit: str
         """
 
-        self._usda = usda
+        self._measurement_unit = measurement_unit
+
+    @property
+    def size_fulltext(self) -> str:
+        """Gets the size_fulltext of this BrandedFoodObjectServing.
+
+        Serving size description  # noqa: E501
+
+        :return: The size_fulltext of this BrandedFoodObjectServing.
+        :rtype: str
+        """
+        return self._size_fulltext
+
+    @size_fulltext.setter
+    def size_fulltext(self, size_fulltext: str):
+        """Sets the size_fulltext of this BrandedFoodObjectServing.
+
+        Serving size description  # noqa: E501
+
+        :param size_fulltext: The size_fulltext of this BrandedFoodObjectServing.
+        :type size_fulltext: str
+        """
+
+        self._size_fulltext = size_fulltext

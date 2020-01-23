@@ -26,20 +26,6 @@ class TestDefaultController(BaseTestCase):
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
-    def test_food_branded_id_php_get(self):
-        """Test case for food_branded_id_php_get
-
-        Get a branded food item using an ID number
-        """
-        query_string = [('id', 56),
-                        ('source', 'source_example')]
-        response = self.client.open(
-            '/api/v2/food/branded/id.php',
-            method='GET',
-            query_string=query_string)
-        self.assert200(response,
-                       'Response body is : ' + response.data.decode('utf-8'))
-
     def test_food_branded_name_php_get(self):
         """Test case for food_branded_name_php_get
 

@@ -19,21 +19,6 @@ def food_branded_barcode_php_get(code):  # noqa: E501
     return 'do some magic!'
 
 
-def food_branded_id_php_get(id, source=None):  # noqa: E501
-    """Get a branded food item using an ID number
-
-    ## Get data for a branded food using Chomp&#x27;s internal ID number.  **Example** &gt; &#x60;&#x60;&#x60;https://chompthis.com/api/v2/food/branded/id.php?api_key&#x3D;API_KEY&amp;id&#x3D;ID&#x60;&#x60;&#x60;  **Tips**   * Find a food&#x27;s ID by using our **[food lookup tool](https://chompthis.com/api/lookup.php)**.   * Alternatively, set the \&quot;source\&quot; parameter to \&quot;USDA\&quot; and use the food&#x27;s FDC ID.  # noqa: E501
-
-    :param id: #### The ID number of a branded food item.  **Example #1: Using Chomp ID** &gt; &#x60;&#x60;&#x60;&amp;id&#x3D;15&#x60;&#x60;&#x60;  **Example #2: Using FDC ID** &gt; &#x60;&#x60;&#x60;&amp;id&#x3D;FDC_ID&amp;source&#x3D;USDA&#x60;&#x60;&#x60; 
-    :type id: int
-    :param source: #### Configure the endpoint to accept food IDs from various data sources. This endpoint defaults to Chomp but can accept FDC IDs.  **Example** &gt; &#x60;&#x60;&#x60;&amp;source&#x3D;Chomp&#x60;&#x60;&#x60;  **Tips**   * Pass in &#x60;&#x60;&#x60;&amp;source&#x3D;USDA&#x60;&#x60;&#x60; if you want to look up food items using a USDA FDC ID. 
-    :type source: str
-
-    :rtype: BrandedFoodObject
-    """
-    return 'do some magic!'
-
-
 def food_branded_name_php_get(name, limit=None, page=None):  # noqa: E501
     """Get a branded food item by name
 

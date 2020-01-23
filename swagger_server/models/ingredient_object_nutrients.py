@@ -6,7 +6,6 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
-from swagger_server.models.branded_food_object_nutrients_usda import BrandedFoodObjectNutrientsUsda  # noqa: F401,E501
 from swagger_server import util
 
 
@@ -15,20 +14,65 @@ class IngredientObjectNutrients(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, usda: List[BrandedFoodObjectNutrientsUsda]=None):  # noqa: E501
+    def __init__(self, name: str=None, per_100g: float=None, measurement_unit: str=None, min: float=None, max: float=None, median: float=None, rank: int=None, data_points: int=None, footnote: str=None, description: str=None):  # noqa: E501
         """IngredientObjectNutrients - a model defined in Swagger
 
-        :param usda: The usda of this IngredientObjectNutrients.  # noqa: E501
-        :type usda: List[BrandedFoodObjectNutrientsUsda]
+        :param name: The name of this IngredientObjectNutrients.  # noqa: E501
+        :type name: str
+        :param per_100g: The per_100g of this IngredientObjectNutrients.  # noqa: E501
+        :type per_100g: float
+        :param measurement_unit: The measurement_unit of this IngredientObjectNutrients.  # noqa: E501
+        :type measurement_unit: str
+        :param min: The min of this IngredientObjectNutrients.  # noqa: E501
+        :type min: float
+        :param max: The max of this IngredientObjectNutrients.  # noqa: E501
+        :type max: float
+        :param median: The median of this IngredientObjectNutrients.  # noqa: E501
+        :type median: float
+        :param rank: The rank of this IngredientObjectNutrients.  # noqa: E501
+        :type rank: int
+        :param data_points: The data_points of this IngredientObjectNutrients.  # noqa: E501
+        :type data_points: int
+        :param footnote: The footnote of this IngredientObjectNutrients.  # noqa: E501
+        :type footnote: str
+        :param description: The description of this IngredientObjectNutrients.  # noqa: E501
+        :type description: str
         """
         self.swagger_types = {
-            'usda': List[BrandedFoodObjectNutrientsUsda]
+            'name': str,
+            'per_100g': float,
+            'measurement_unit': str,
+            'min': float,
+            'max': float,
+            'median': float,
+            'rank': int,
+            'data_points': int,
+            'footnote': str,
+            'description': str
         }
 
         self.attribute_map = {
-            'usda': 'usda'
+            'name': 'name',
+            'per_100g': 'per_100g',
+            'measurement_unit': 'measurement_unit',
+            'min': 'min',
+            'max': 'max',
+            'median': 'median',
+            'rank': 'rank',
+            'data_points': 'data_points',
+            'footnote': 'footnote',
+            'description': 'description'
         }
-        self._usda = usda
+        self._name = name
+        self._per_100g = per_100g
+        self._measurement_unit = measurement_unit
+        self._min = min
+        self._max = max
+        self._median = median
+        self._rank = rank
+        self._data_points = data_points
+        self._footnote = footnote
+        self._description = description
 
     @classmethod
     def from_dict(cls, dikt) -> 'IngredientObjectNutrients':
@@ -42,24 +86,231 @@ class IngredientObjectNutrients(Model):
         return util.deserialize_model(dikt, cls)
 
     @property
-    def usda(self) -> List[BrandedFoodObjectNutrientsUsda]:
-        """Gets the usda of this IngredientObjectNutrients.
+    def name(self) -> str:
+        """Gets the name of this IngredientObjectNutrients.
 
-        An array containing an object for each nutrient data point as found in the USDA database  # noqa: E501
+        Nutrient name  # noqa: E501
 
-        :return: The usda of this IngredientObjectNutrients.
-        :rtype: List[BrandedFoodObjectNutrientsUsda]
+        :return: The name of this IngredientObjectNutrients.
+        :rtype: str
         """
-        return self._usda
+        return self._name
 
-    @usda.setter
-    def usda(self, usda: List[BrandedFoodObjectNutrientsUsda]):
-        """Sets the usda of this IngredientObjectNutrients.
+    @name.setter
+    def name(self, name: str):
+        """Sets the name of this IngredientObjectNutrients.
 
-        An array containing an object for each nutrient data point as found in the USDA database  # noqa: E501
+        Nutrient name  # noqa: E501
 
-        :param usda: The usda of this IngredientObjectNutrients.
-        :type usda: List[BrandedFoodObjectNutrientsUsda]
+        :param name: The name of this IngredientObjectNutrients.
+        :type name: str
         """
 
-        self._usda = usda
+        self._name = name
+
+    @property
+    def per_100g(self) -> float:
+        """Gets the per_100g of this IngredientObjectNutrients.
+
+        Amount of the nutrient per 100g of food  # noqa: E501
+
+        :return: The per_100g of this IngredientObjectNutrients.
+        :rtype: float
+        """
+        return self._per_100g
+
+    @per_100g.setter
+    def per_100g(self, per_100g: float):
+        """Sets the per_100g of this IngredientObjectNutrients.
+
+        Amount of the nutrient per 100g of food  # noqa: E501
+
+        :param per_100g: The per_100g of this IngredientObjectNutrients.
+        :type per_100g: float
+        """
+
+        self._per_100g = per_100g
+
+    @property
+    def measurement_unit(self) -> str:
+        """Gets the measurement_unit of this IngredientObjectNutrients.
+
+        The unit used for the measure of this nutrient  # noqa: E501
+
+        :return: The measurement_unit of this IngredientObjectNutrients.
+        :rtype: str
+        """
+        return self._measurement_unit
+
+    @measurement_unit.setter
+    def measurement_unit(self, measurement_unit: str):
+        """Sets the measurement_unit of this IngredientObjectNutrients.
+
+        The unit used for the measure of this nutrient  # noqa: E501
+
+        :param measurement_unit: The measurement_unit of this IngredientObjectNutrients.
+        :type measurement_unit: str
+        """
+
+        self._measurement_unit = measurement_unit
+
+    @property
+    def min(self) -> float:
+        """Gets the min of this IngredientObjectNutrients.
+
+        Minimum nutrient value  # noqa: E501
+
+        :return: The min of this IngredientObjectNutrients.
+        :rtype: float
+        """
+        return self._min
+
+    @min.setter
+    def min(self, min: float):
+        """Sets the min of this IngredientObjectNutrients.
+
+        Minimum nutrient value  # noqa: E501
+
+        :param min: The min of this IngredientObjectNutrients.
+        :type min: float
+        """
+
+        self._min = min
+
+    @property
+    def max(self) -> float:
+        """Gets the max of this IngredientObjectNutrients.
+
+        Maximum nutrient value  # noqa: E501
+
+        :return: The max of this IngredientObjectNutrients.
+        :rtype: float
+        """
+        return self._max
+
+    @max.setter
+    def max(self, max: float):
+        """Sets the max of this IngredientObjectNutrients.
+
+        Maximum nutrient value  # noqa: E501
+
+        :param max: The max of this IngredientObjectNutrients.
+        :type max: float
+        """
+
+        self._max = max
+
+    @property
+    def median(self) -> float:
+        """Gets the median of this IngredientObjectNutrients.
+
+        Median nutrient value  # noqa: E501
+
+        :return: The median of this IngredientObjectNutrients.
+        :rtype: float
+        """
+        return self._median
+
+    @median.setter
+    def median(self, median: float):
+        """Sets the median of this IngredientObjectNutrients.
+
+        Median nutrient value  # noqa: E501
+
+        :param median: The median of this IngredientObjectNutrients.
+        :type median: float
+        """
+
+        self._median = median
+
+    @property
+    def rank(self) -> int:
+        """Gets the rank of this IngredientObjectNutrients.
+
+        Nutrient rank  # noqa: E501
+
+        :return: The rank of this IngredientObjectNutrients.
+        :rtype: int
+        """
+        return self._rank
+
+    @rank.setter
+    def rank(self, rank: int):
+        """Sets the rank of this IngredientObjectNutrients.
+
+        Nutrient rank  # noqa: E501
+
+        :param rank: The rank of this IngredientObjectNutrients.
+        :type rank: int
+        """
+
+        self._rank = rank
+
+    @property
+    def data_points(self) -> int:
+        """Gets the data_points of this IngredientObjectNutrients.
+
+        Number of observations on which the value is based  # noqa: E501
+
+        :return: The data_points of this IngredientObjectNutrients.
+        :rtype: int
+        """
+        return self._data_points
+
+    @data_points.setter
+    def data_points(self, data_points: int):
+        """Sets the data_points of this IngredientObjectNutrients.
+
+        Number of observations on which the value is based  # noqa: E501
+
+        :param data_points: The data_points of this IngredientObjectNutrients.
+        :type data_points: int
+        """
+
+        self._data_points = data_points
+
+    @property
+    def footnote(self) -> str:
+        """Gets the footnote of this IngredientObjectNutrients.
+
+        Comments on any unusual aspect of the food nutrient. Examples might include why a nutrient value is different than typically expected.  # noqa: E501
+
+        :return: The footnote of this IngredientObjectNutrients.
+        :rtype: str
+        """
+        return self._footnote
+
+    @footnote.setter
+    def footnote(self, footnote: str):
+        """Sets the footnote of this IngredientObjectNutrients.
+
+        Comments on any unusual aspect of the food nutrient. Examples might include why a nutrient value is different than typically expected.  # noqa: E501
+
+        :param footnote: The footnote of this IngredientObjectNutrients.
+        :type footnote: str
+        """
+
+        self._footnote = footnote
+
+    @property
+    def description(self) -> str:
+        """Gets the description of this IngredientObjectNutrients.
+
+        Description of the nutrient source  # noqa: E501
+
+        :return: The description of this IngredientObjectNutrients.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description: str):
+        """Sets the description of this IngredientObjectNutrients.
+
+        Description of the nutrient source  # noqa: E501
+
+        :param description: The description of this IngredientObjectNutrients.
+        :type description: str
+        """
+
+        self._description = description
