@@ -7,7 +7,6 @@ from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
 from swagger_server.models.branded_food_object_calorie_conversion_factor import BrandedFoodObjectCalorieConversionFactor  # noqa: F401,E501
-from swagger_server.models.branded_food_object_components import BrandedFoodObjectComponents  # noqa: F401,E501
 from swagger_server.models.branded_food_object_country_details import BrandedFoodObjectCountryDetails  # noqa: F401,E501
 from swagger_server.models.branded_food_object_diet_flags import BrandedFoodObjectDietFlags  # noqa: F401,E501
 from swagger_server.models.branded_food_object_diet_labels import BrandedFoodObjectDietLabels  # noqa: F401,E501
@@ -15,7 +14,6 @@ from swagger_server.models.branded_food_object_ingredients import BrandedFoodObj
 from swagger_server.models.branded_food_object_nutrients import BrandedFoodObjectNutrients  # noqa: F401,E501
 from swagger_server.models.branded_food_object_package import BrandedFoodObjectPackage  # noqa: F401,E501
 from swagger_server.models.branded_food_object_packaging_photos import BrandedFoodObjectPackagingPhotos  # noqa: F401,E501
-from swagger_server.models.branded_food_object_portions import BrandedFoodObjectPortions  # noqa: F401,E501
 from swagger_server.models.branded_food_object_serving import BrandedFoodObjectServing  # noqa: F401,E501
 from swagger_server import util
 
@@ -25,7 +23,7 @@ class BrandedFoodObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: BrandedFoodObjectIngredients=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, description: str=None, keywords: List[str]=None, footnote: str=None):  # noqa: E501
+    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: BrandedFoodObjectIngredients=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, description: str=None, keywords: List[str]=None, footnote: str=None):  # noqa: E501
         """BrandedFoodObjectItems - a model defined in Swagger
 
         :param barcode: The barcode of this BrandedFoodObjectItems.  # noqa: E501
@@ -54,10 +52,6 @@ class BrandedFoodObjectItems(Model):
         :type diet_flags: List[BrandedFoodObjectDietFlags]
         :param packaging_photos: The packaging_photos of this BrandedFoodObjectItems.  # noqa: E501
         :type packaging_photos: BrandedFoodObjectPackagingPhotos
-        :param components: The components of this BrandedFoodObjectItems.  # noqa: E501
-        :type components: List[BrandedFoodObjectComponents]
-        :param portions: The portions of this BrandedFoodObjectItems.  # noqa: E501
-        :type portions: List[BrandedFoodObjectPortions]
         :param allergens: The allergens of this BrandedFoodObjectItems.  # noqa: E501
         :type allergens: List[str]
         :param brand_list: The brand_list of this BrandedFoodObjectItems.  # noqa: E501
@@ -99,8 +93,6 @@ class BrandedFoodObjectItems(Model):
             'diet_labels': BrandedFoodObjectDietLabels,
             'diet_flags': List[BrandedFoodObjectDietFlags],
             'packaging_photos': BrandedFoodObjectPackagingPhotos,
-            'components': List[BrandedFoodObjectComponents],
-            'portions': List[BrandedFoodObjectPortions],
             'allergens': List[str],
             'brand_list': List[str],
             'countries': List[str],
@@ -130,8 +122,6 @@ class BrandedFoodObjectItems(Model):
             'diet_labels': 'diet_labels',
             'diet_flags': 'diet_flags',
             'packaging_photos': 'packaging_photos',
-            'components': 'components',
-            'portions': 'portions',
             'allergens': 'allergens',
             'brand_list': 'brand_list',
             'countries': 'countries',
@@ -159,8 +149,6 @@ class BrandedFoodObjectItems(Model):
         self._diet_labels = diet_labels
         self._diet_flags = diet_flags
         self._packaging_photos = packaging_photos
-        self._components = components
-        self._portions = portions
         self._allergens = allergens
         self._brand_list = brand_list
         self._countries = countries
@@ -468,52 +456,6 @@ class BrandedFoodObjectItems(Model):
         """
 
         self._packaging_photos = packaging_photos
-
-    @property
-    def components(self) -> List[BrandedFoodObjectComponents]:
-        """Gets the components of this BrandedFoodObjectItems.
-
-        An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)  # noqa: E501
-
-        :return: The components of this BrandedFoodObjectItems.
-        :rtype: List[BrandedFoodObjectComponents]
-        """
-        return self._components
-
-    @components.setter
-    def components(self, components: List[BrandedFoodObjectComponents]):
-        """Sets the components of this BrandedFoodObjectItems.
-
-        An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)  # noqa: E501
-
-        :param components: The components of this BrandedFoodObjectItems.
-        :type components: List[BrandedFoodObjectComponents]
-        """
-
-        self._components = components
-
-    @property
-    def portions(self) -> List[BrandedFoodObjectPortions]:
-        """Gets the portions of this BrandedFoodObjectItems.
-
-        An array of objects containing information on discrete amounts of a food found in this item  # noqa: E501
-
-        :return: The portions of this BrandedFoodObjectItems.
-        :rtype: List[BrandedFoodObjectPortions]
-        """
-        return self._portions
-
-    @portions.setter
-    def portions(self, portions: List[BrandedFoodObjectPortions]):
-        """Sets the portions of this BrandedFoodObjectItems.
-
-        An array of objects containing information on discrete amounts of a food found in this item  # noqa: E501
-
-        :param portions: The portions of this BrandedFoodObjectItems.
-        :type portions: List[BrandedFoodObjectPortions]
-        """
-
-        self._portions = portions
 
     @property
     def allergens(self) -> List[str]:

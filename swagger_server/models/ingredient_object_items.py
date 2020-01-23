@@ -7,10 +7,10 @@ from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
 from swagger_server.models.branded_food_object_calorie_conversion_factor import BrandedFoodObjectCalorieConversionFactor  # noqa: F401,E501
-from swagger_server.models.branded_food_object_components import BrandedFoodObjectComponents  # noqa: F401,E501
 from swagger_server.models.branded_food_object_diet_labels import BrandedFoodObjectDietLabels  # noqa: F401,E501
-from swagger_server.models.branded_food_object_portions import BrandedFoodObjectPortions  # noqa: F401,E501
+from swagger_server.models.ingredient_object_components import IngredientObjectComponents  # noqa: F401,E501
 from swagger_server.models.ingredient_object_nutrients import IngredientObjectNutrients  # noqa: F401,E501
+from swagger_server.models.ingredient_object_portions import IngredientObjectPortions  # noqa: F401,E501
 from swagger_server import util
 
 
@@ -19,7 +19,7 @@ class IngredientObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, name: str=None, categories: List[str]=None, nutrients: IngredientObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, common_names: str=None, description: str=None, footnote: str=None):  # noqa: E501
+    def __init__(self, name: str=None, categories: List[str]=None, nutrients: IngredientObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[IngredientObjectComponents]=None, portions: List[IngredientObjectPortions]=None, common_names: str=None, description: str=None, footnote: str=None):  # noqa: E501
         """IngredientObjectItems - a model defined in Swagger
 
         :param name: The name of this IngredientObjectItems.  # noqa: E501
@@ -35,9 +35,9 @@ class IngredientObjectItems(Model):
         :param diet_labels: The diet_labels of this IngredientObjectItems.  # noqa: E501
         :type diet_labels: BrandedFoodObjectDietLabels
         :param components: The components of this IngredientObjectItems.  # noqa: E501
-        :type components: List[BrandedFoodObjectComponents]
+        :type components: List[IngredientObjectComponents]
         :param portions: The portions of this IngredientObjectItems.  # noqa: E501
-        :type portions: List[BrandedFoodObjectPortions]
+        :type portions: List[IngredientObjectPortions]
         :param common_names: The common_names of this IngredientObjectItems.  # noqa: E501
         :type common_names: str
         :param description: The description of this IngredientObjectItems.  # noqa: E501
@@ -52,8 +52,8 @@ class IngredientObjectItems(Model):
             'calorie_conversion_factor': BrandedFoodObjectCalorieConversionFactor,
             'protein_conversion_factor': float,
             'diet_labels': BrandedFoodObjectDietLabels,
-            'components': List[BrandedFoodObjectComponents],
-            'portions': List[BrandedFoodObjectPortions],
+            'components': List[IngredientObjectComponents],
+            'portions': List[IngredientObjectPortions],
             'common_names': str,
             'description': str,
             'footnote': str
@@ -226,47 +226,47 @@ class IngredientObjectItems(Model):
         self._diet_labels = diet_labels
 
     @property
-    def components(self) -> List[BrandedFoodObjectComponents]:
+    def components(self) -> List[IngredientObjectComponents]:
         """Gets the components of this IngredientObjectItems.
 
         An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)  # noqa: E501
 
         :return: The components of this IngredientObjectItems.
-        :rtype: List[BrandedFoodObjectComponents]
+        :rtype: List[IngredientObjectComponents]
         """
         return self._components
 
     @components.setter
-    def components(self, components: List[BrandedFoodObjectComponents]):
+    def components(self, components: List[IngredientObjectComponents]):
         """Sets the components of this IngredientObjectItems.
 
         An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)  # noqa: E501
 
         :param components: The components of this IngredientObjectItems.
-        :type components: List[BrandedFoodObjectComponents]
+        :type components: List[IngredientObjectComponents]
         """
 
         self._components = components
 
     @property
-    def portions(self) -> List[BrandedFoodObjectPortions]:
+    def portions(self) -> List[IngredientObjectPortions]:
         """Gets the portions of this IngredientObjectItems.
 
         An array of objects containing information on discrete amounts of a food found in this item  # noqa: E501
 
         :return: The portions of this IngredientObjectItems.
-        :rtype: List[BrandedFoodObjectPortions]
+        :rtype: List[IngredientObjectPortions]
         """
         return self._portions
 
     @portions.setter
-    def portions(self, portions: List[BrandedFoodObjectPortions]):
+    def portions(self, portions: List[IngredientObjectPortions]):
         """Sets the portions of this IngredientObjectItems.
 
         An array of objects containing information on discrete amounts of a food found in this item  # noqa: E501
 
         :param portions: The portions of this IngredientObjectItems.
-        :type portions: List[BrandedFoodObjectPortions]
+        :type portions: List[IngredientObjectPortions]
         """
 
         self._portions = portions
