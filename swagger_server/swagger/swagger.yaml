@@ -16,12 +16,13 @@ info:
     \ you used to create your subscription.\n  * You will also find your API key in\
     \ the **[Client Center](https://chompthis.com/api/manage.php)**.\n  * Read **[this\
     \ article](https://desk.zoho.com/portal/chompthis/kb/articles/how-do-i-find-my-api-key)**\
-    \ for more information.\n\n|||\n| ------- | -------- |\n| [Knowledge Base](https://desk.zoho.com/portal/chompthis/kb/chomp)\
-    \ | [Pricing](https://chompthis.com/api/) |\n| [Attribution](https://chompthis.com/api/docs/attribution.php)\
-    \ | [Cost Calculator](https://chompthis.com/api/cost-calculator.php) |\n| [Terms\
-    \ & License](https://chompthis.com/api/terms.php) | [Database Search](https://chompthis.com/api/lookup.php)\
-    \ |\n| [Support](https://chompthis.com/api/ticket-new.php) | [Query Builder](https://chompthis.com/api/build.php)\
-    \ |\n| [Client Center](https://chompthis.com/api/manage.php) | |\n"
+    \ for more information.\n\n### Helpful Links\n  * **Help & Support**\n    * [Knowledge\
+    \ Base &raquo;](https://desk.zoho.com/portal/chompthis/kb/chomp)\n    * [Support\
+    \ &raquo;](https://chompthis.com/api/ticket-new.php)\n    * [Client Center &raquo;](https://chompthis.com/api/manage.php)\n\
+    \  * **Pricing**\n    * [Subscription Options &raquo;](https://chompthis.com/api/)\n\
+    \    * [Cost Calculator &raquo;](https://chompthis.com/api/cost-calculator.php)\n\
+    \  * **Guidelines**\n    * [Terms & License &raquo;](https://chompthis.com/api/terms.php)\n\
+    \    * [Attribution &raquo;](https://chompthis.com/api/docs/attribution.php)\n"
   version: 1.0.0-oas3
 servers:
 - url: https://chompthis.com/api/v2
@@ -774,12 +775,12 @@ components:
               compatibility_level: 3
               is_compatible: true
           name: name
-          common_names: common_names
           description: description
           categories:
           - categories
           - categories
           footnote: footnote
+          common_name: common_name
           nutrients:
           - data_points: 2
             min: 6.02745618307040320615897144307382404804229736328125
@@ -850,12 +851,12 @@ components:
               compatibility_level: 3
               is_compatible: true
           name: name
-          common_names: common_names
           description: description
           categories:
           - categories
           - categories
           footnote: footnote
+          common_name: common_name
           nutrients:
           - data_points: 2
             min: 6.02745618307040320615897144307382404804229736328125
@@ -1560,9 +1561,9 @@ components:
             of a food found in this item
           items:
             $ref: '#/components/schemas/IngredientObject_portions'
-        common_names:
+        common_name:
           type: string
-          description: Common names associated with this item. These generally clarify
+          description: Common name associated with this item. These generally clarify
             what the item is (e.g. when the brand name is "BRAND's Spicy Enchilada"
             the common name may be "Chicken enchilada")
         description:
@@ -1610,12 +1611,12 @@ components:
             compatibility_level: 3
             is_compatible: true
         name: name
-        common_names: common_names
         description: description
         categories:
         - categories
         - categories
         footnote: footnote
+        common_name: common_name
         nutrients:
         - data_points: 2
           min: 6.02745618307040320615897144307382404804229736328125
