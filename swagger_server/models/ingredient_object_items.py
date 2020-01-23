@@ -6,8 +6,8 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
-from swagger_server.models.branded_food_object_calorie_conversion_factor import BrandedFoodObjectCalorieConversionFactor  # noqa: F401,E501
 from swagger_server.models.branded_food_object_diet_labels import BrandedFoodObjectDietLabels  # noqa: F401,E501
+from swagger_server.models.ingredient_object_calorie_conversion_factor import IngredientObjectCalorieConversionFactor  # noqa: F401,E501
 from swagger_server.models.ingredient_object_components import IngredientObjectComponents  # noqa: F401,E501
 from swagger_server.models.ingredient_object_nutrients import IngredientObjectNutrients  # noqa: F401,E501
 from swagger_server.models.ingredient_object_portions import IngredientObjectPortions  # noqa: F401,E501
@@ -19,7 +19,7 @@ class IngredientObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, name: str=None, categories: List[str]=None, nutrients: IngredientObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[IngredientObjectComponents]=None, portions: List[IngredientObjectPortions]=None, common_names: str=None, description: str=None, footnote: str=None):  # noqa: E501
+    def __init__(self, name: str=None, categories: List[str]=None, nutrients: IngredientObjectNutrients=None, calorie_conversion_factor: IngredientObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[IngredientObjectComponents]=None, portions: List[IngredientObjectPortions]=None, common_names: str=None, description: str=None, footnote: str=None):  # noqa: E501
         """IngredientObjectItems - a model defined in Swagger
 
         :param name: The name of this IngredientObjectItems.  # noqa: E501
@@ -29,7 +29,7 @@ class IngredientObjectItems(Model):
         :param nutrients: The nutrients of this IngredientObjectItems.  # noqa: E501
         :type nutrients: IngredientObjectNutrients
         :param calorie_conversion_factor: The calorie_conversion_factor of this IngredientObjectItems.  # noqa: E501
-        :type calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor
+        :type calorie_conversion_factor: IngredientObjectCalorieConversionFactor
         :param protein_conversion_factor: The protein_conversion_factor of this IngredientObjectItems.  # noqa: E501
         :type protein_conversion_factor: float
         :param diet_labels: The diet_labels of this IngredientObjectItems.  # noqa: E501
@@ -49,7 +49,7 @@ class IngredientObjectItems(Model):
             'name': str,
             'categories': List[str],
             'nutrients': IngredientObjectNutrients,
-            'calorie_conversion_factor': BrandedFoodObjectCalorieConversionFactor,
+            'calorie_conversion_factor': IngredientObjectCalorieConversionFactor,
             'protein_conversion_factor': float,
             'diet_labels': BrandedFoodObjectDietLabels,
             'components': List[IngredientObjectComponents],
@@ -161,22 +161,22 @@ class IngredientObjectItems(Model):
         self._nutrients = nutrients
 
     @property
-    def calorie_conversion_factor(self) -> BrandedFoodObjectCalorieConversionFactor:
+    def calorie_conversion_factor(self) -> IngredientObjectCalorieConversionFactor:
         """Gets the calorie_conversion_factor of this IngredientObjectItems.
 
 
         :return: The calorie_conversion_factor of this IngredientObjectItems.
-        :rtype: BrandedFoodObjectCalorieConversionFactor
+        :rtype: IngredientObjectCalorieConversionFactor
         """
         return self._calorie_conversion_factor
 
     @calorie_conversion_factor.setter
-    def calorie_conversion_factor(self, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor):
+    def calorie_conversion_factor(self, calorie_conversion_factor: IngredientObjectCalorieConversionFactor):
         """Sets the calorie_conversion_factor of this IngredientObjectItems.
 
 
         :param calorie_conversion_factor: The calorie_conversion_factor of this IngredientObjectItems.
-        :type calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor
+        :type calorie_conversion_factor: IngredientObjectCalorieConversionFactor
         """
 
         self._calorie_conversion_factor = calorie_conversion_factor
