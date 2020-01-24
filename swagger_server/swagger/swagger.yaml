@@ -12,6 +12,7 @@ info:
     \  * Click the \"**Execute**\" button.\n\n### Example \n  * Branded food response\
     \ object: **[View example &raquo;](https://raw.githubusercontent.com/chompfoods/examples/master/branded-food-response-object.json)**\n\
     \  * Ingredient response object: **[View example &raquo;](https://raw.githubusercontent.com/chompfoods/examples/master/ingredient-response-object.json)**\n\
+    \  * Error response object: **[View example &raquo;](https://raw.githubusercontent.com/chompfoods/examples/master/error-response-object.json)**\n\
     \n### How Do I Find My API Key?\n  * Your API key was sent to the email address\
     \ you used to create your subscription.\n  * You will also find your API key in\
     \ the **[Client Center](https://chompthis.com/api/manage.php)**.\n  * Read **[this\
