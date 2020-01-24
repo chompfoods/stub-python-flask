@@ -63,8 +63,6 @@ paths:
         "401":
           description: |
             **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
-        "403":
-          $ref: '#/components/responses/403Error'
         "404":
           description: |
             **Not found** - No food items were found.
@@ -150,8 +148,6 @@ paths:
         "401":
           description: |
             **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
-        "403":
-          $ref: '#/components/responses/403Error'
         "404":
           description: |
             **Not found** - No food items were found.
@@ -379,8 +375,6 @@ paths:
         "401":
           description: |
             **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
-        "403":
-          $ref: '#/components/responses/403Error'
         "404":
           description: |
             **Not found** - No food items were found.
@@ -482,8 +476,6 @@ paths:
         "401":
           description: |
             **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
-        "403":
-          $ref: '#/components/responses/403Error'
         "404":
           description: |
             **Not found** - No food items were found.
