@@ -63,7 +63,7 @@ paths:
             **Validation error** - Invalid parameters or request.
         "401":
           description: |
-            **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
+            **Unauthorized** - Invalid API key, unauthorized access, or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
         "404":
           description: |
             **Not found** - No food items were found.
@@ -148,7 +148,7 @@ paths:
             **Validation error** - Invalid parameters or request.
         "401":
           description: |
-            **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
+            **Unauthorized** - Invalid API key, unauthorized access, or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
         "404":
           description: |
             **Not found** - No food items were found.
@@ -375,7 +375,7 @@ paths:
             **Validation error** - Invalid parameters or request.
         "401":
           description: |
-            **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
+            **Unauthorized** - Invalid API key, unauthorized access, or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
         "404":
           description: |
             **Not found** - No food items were found.
@@ -476,7 +476,7 @@ paths:
             **Validation error** - Invalid parameters or request.
         "401":
           description: |
-            **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
+            **Unauthorized** - Invalid API key, unauthorized access, or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
         "404":
           description: |
             **Not found** - No food items were found.
@@ -1660,7 +1660,7 @@ components:
         **Validation error** - Invalid parameters or request.
     "401Error":
       description: |
-        **Unauthorized** - Invalid API key or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
+        **Unauthorized** - Invalid API key, unauthorized access, or usage limits exceeded. ***[More information &raquo;](https://desk.zoho.com/portal/chompthis/kb/articles/what-is-a-rate-limit)***
     "404Error":
       description: |
         **Not found** - No food items were found.
