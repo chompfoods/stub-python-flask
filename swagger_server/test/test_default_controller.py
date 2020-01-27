@@ -73,7 +73,6 @@ class TestDefaultController(BaseTestCase):
         Get raw/generic food ingredient item(s)
         """
         query_string = [('find', 56),
-                        ('list', true),
                         ('raw', true),
                         ('limit', 56)]
         response = self.client.open(
