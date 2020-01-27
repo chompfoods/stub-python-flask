@@ -415,7 +415,7 @@ paths:
         style: form
         explode: true
         schema:
-          type: integer
+          type: string
       - name: raw
         in: query
         description: |
