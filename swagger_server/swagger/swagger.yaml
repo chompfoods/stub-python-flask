@@ -713,27 +713,7 @@ components:
             gram_weight: 7.3862819483858839220147274318151175975799560546875
             name: name
             is_refuse: true
-          diet_labels:
-            vegetarian:
-              confidence_description: confidence_description
-              confidence: 9
-              name: name
-              compatibility_level: 7
-              is_compatible: true
-            vegan:
-              confidence_description: confidence_description
-              confidence: 2
-              name: name
-              compatibility_level: 5
-              is_compatible: true
-            gluten_free:
-              confidence_description: confidence_description
-              confidence: 2
-              name: name
-              compatibility_level: 3
-              is_compatible: true
           name: name
-          description: description
           categories:
           - categories
           - categories
@@ -789,27 +769,7 @@ components:
             gram_weight: 7.3862819483858839220147274318151175975799560546875
             name: name
             is_refuse: true
-          diet_labels:
-            vegetarian:
-              confidence_description: confidence_description
-              confidence: 9
-              name: name
-              compatibility_level: 7
-              is_compatible: true
-            vegan:
-              confidence_description: confidence_description
-              confidence: 2
-              name: name
-              compatibility_level: 5
-              is_compatible: true
-            gluten_free:
-              confidence_description: confidence_description
-              confidence: 2
-              name: name
-              compatibility_level: 3
-              is_compatible: true
           name: name
-          description: description
           categories:
           - categories
           - categories
@@ -1505,8 +1465,6 @@ components:
         protein_conversion_factor:
           type: number
           description: The multiplication factor used to calculate protein from nitrogen
-        diet_labels:
-          $ref: '#/components/schemas/BrandedFoodObject_diet_labels'
         components:
           type: array
           description: An array of objects containing the constituent parts of a food
@@ -1524,9 +1482,6 @@ components:
           description: Common name associated with this item. These generally clarify
             what the item is (e.g. when the brand name is "BRAND's Spicy Enchilada"
             the common name may be "Chicken enchilada")
-        description:
-          type: string
-          description: A description of this item
         footnote:
           type: string
           description: Comments on any unusual aspects of this item. Examples might
@@ -1549,27 +1504,7 @@ components:
           gram_weight: 7.3862819483858839220147274318151175975799560546875
           name: name
           is_refuse: true
-        diet_labels:
-          vegetarian:
-            confidence_description: confidence_description
-            confidence: 9
-            name: name
-            compatibility_level: 7
-            is_compatible: true
-          vegan:
-            confidence_description: confidence_description
-            confidence: 2
-            name: name
-            compatibility_level: 5
-            is_compatible: true
-          gluten_free:
-            confidence_description: confidence_description
-            confidence: 2
-            name: name
-            compatibility_level: 3
-            is_compatible: true
         name: name
-        description: description
         categories:
         - categories
         - categories
