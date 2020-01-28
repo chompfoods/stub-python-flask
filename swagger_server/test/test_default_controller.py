@@ -73,7 +73,6 @@ class TestDefaultController(BaseTestCase):
         Get raw/generic food ingredient item(s)
         """
         query_string = [('find', 'find_example'),
-                        ('raw', true),
                         ('limit', 56)]
         response = self.client.open(
             '/api/v2/food/ingredient/search.php',

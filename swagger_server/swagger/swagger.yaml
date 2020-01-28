@@ -392,10 +392,10 @@ paths:
         ## Get data for a specific ingredient or a specific set of ingredients.
 
         **Example #1: Single Ingredient**
-        > ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=broccoli```
+        > ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=raw broccoli```
 
         **Example #2: Set of Ingredients**
-        > ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=broccoli,cauliflower,spinach```
+        > ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=raw broccoli,mashed potatoes,raw spinach```
 
         **Tips**
           * Expose ingredient endpoints by using our **[food lookup tool](https://chompthis.com/api/lookup.php)**.
@@ -406,31 +406,16 @@ paths:
       - name: find
         in: query
         description: "Search our database for a single ingredient or a specific set\
-          \ of ingredients.\n\n**Example #1: Single Ingredient**\n> ```&find=broccoli```\n\
-          \n**Example #2: Set of Ingredients**\n> ```&find=broccoli,cauliflower,spinach```\n\
-          \n**Important Notes** \n  * Comma-separated lists cannot contain more than\
-          \ **15 ingredients**. You must perform additional API calls if you are looking\
-          \ up more than 15 ingredients.\n"
+          \ of ingredients.\n\n**Example #1: Single Ingredient**\n> ```&find=raw broccoli```\n\
+          \n**Example #2: Set of Ingredients**\n> ```&find=raw broccoli,raw cauliflower,mashed\
+          \ potatoes```\n\n**Important Notes** \n  * Comma-separated lists cannot\
+          \ contain more than **10 ingredients**. You must perform additional API\
+          \ calls if you are looking up more than 10 ingredients.\n"
         required: true
         style: form
         explode: true
         schema:
           type: string
-      - name: raw
-        in: query
-        description: |
-          #### Optionally filter the search result to only include raw ingredients. The default value is "**false**."
-
-          **Example**
-          > ```&raw=true```
-        required: false
-        style: form
-        explode: true
-        schema:
-          type: boolean
-          enum:
-          - true
-          - false
       - name: limit
         in: query
         description: |
