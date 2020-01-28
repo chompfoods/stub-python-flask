@@ -278,7 +278,7 @@ class IngredientObjectItems(Model):
     def footnote(self) -> str:
         """Gets the footnote of this IngredientObjectItems.
 
-        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.  # noqa: E501
+        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall  # noqa: E501
 
         :return: The footnote of this IngredientObjectItems.
         :rtype: str
@@ -289,7 +289,7 @@ class IngredientObjectItems(Model):
     def footnote(self, footnote: str):
         """Sets the footnote of this IngredientObjectItems.
 
-        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.  # noqa: E501
+        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall  # noqa: E501
 
         :param footnote: The footnote of this IngredientObjectItems.
         :type footnote: str
@@ -301,7 +301,7 @@ class IngredientObjectItems(Model):
     def search_term(self) -> str:
         """Gets the search_term of this IngredientObjectItems.
 
-        The original search term that found this food item.  # noqa: E501
+        The original search term that found this food item  # noqa: E501
 
         :return: The search_term of this IngredientObjectItems.
         :rtype: str
@@ -312,7 +312,7 @@ class IngredientObjectItems(Model):
     def search_term(self, search_term: str):
         """Sets the search_term of this IngredientObjectItems.
 
-        The original search term that found this food item.  # noqa: E501
+        The original search term that found this food item  # noqa: E501
 
         :param search_term: The search_term of this IngredientObjectItems.
         :type search_term: str
@@ -324,7 +324,7 @@ class IngredientObjectItems(Model):
     def score(self) -> str:
         """Gets the score of this IngredientObjectItems.
 
-        A value that represents how similar the name of this food item is to the original search term.  # noqa: E501
+        A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item's name is to the original search term.  # noqa: E501
 
         :return: The score of this IngredientObjectItems.
         :rtype: str
@@ -335,7 +335,7 @@ class IngredientObjectItems(Model):
     def score(self, score: str):
         """Sets the score of this IngredientObjectItems.
 
-        A value that represents how similar the name of this food item is to the original search term.  # noqa: E501
+        A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item's name is to the original search term.  # noqa: E501
 
         :param score: The score of this IngredientObjectItems.
         :type score: str
