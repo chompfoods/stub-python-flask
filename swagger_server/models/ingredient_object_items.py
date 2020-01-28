@@ -18,7 +18,7 @@ class IngredientObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, name: str=None, categories: List[str]=None, nutrients: List[IngredientObjectNutrients]=None, calorie_conversion_factor: IngredientObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, components: List[IngredientObjectComponents]=None, portions: List[IngredientObjectPortions]=None, common_name: str=None, footnote: str=None):  # noqa: E501
+    def __init__(self, name: str=None, categories: List[str]=None, nutrients: List[IngredientObjectNutrients]=None, calorie_conversion_factor: IngredientObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, components: List[IngredientObjectComponents]=None, portions: List[IngredientObjectPortions]=None, common_name: str=None, footnote: str=None, search_term: str=None, score: str=None):  # noqa: E501
         """IngredientObjectItems - a model defined in Swagger
 
         :param name: The name of this IngredientObjectItems.  # noqa: E501
@@ -39,6 +39,10 @@ class IngredientObjectItems(Model):
         :type common_name: str
         :param footnote: The footnote of this IngredientObjectItems.  # noqa: E501
         :type footnote: str
+        :param search_term: The search_term of this IngredientObjectItems.  # noqa: E501
+        :type search_term: str
+        :param score: The score of this IngredientObjectItems.  # noqa: E501
+        :type score: str
         """
         self.swagger_types = {
             'name': str,
@@ -49,7 +53,9 @@ class IngredientObjectItems(Model):
             'components': List[IngredientObjectComponents],
             'portions': List[IngredientObjectPortions],
             'common_name': str,
-            'footnote': str
+            'footnote': str,
+            'search_term': str,
+            'score': str
         }
 
         self.attribute_map = {
@@ -61,7 +67,9 @@ class IngredientObjectItems(Model):
             'components': 'components',
             'portions': 'portions',
             'common_name': 'common_name',
-            'footnote': 'footnote'
+            'footnote': 'footnote',
+            'search_term': 'search_term',
+            'score': 'score'
         }
         self._name = name
         self._categories = categories
@@ -72,6 +80,8 @@ class IngredientObjectItems(Model):
         self._portions = portions
         self._common_name = common_name
         self._footnote = footnote
+        self._search_term = search_term
+        self._score = score
 
     @classmethod
     def from_dict(cls, dikt) -> 'IngredientObjectItems':
@@ -286,3 +296,49 @@ class IngredientObjectItems(Model):
         """
 
         self._footnote = footnote
+
+    @property
+    def search_term(self) -> str:
+        """Gets the search_term of this IngredientObjectItems.
+
+        The original search term that found this food item.  # noqa: E501
+
+        :return: The search_term of this IngredientObjectItems.
+        :rtype: str
+        """
+        return self._search_term
+
+    @search_term.setter
+    def search_term(self, search_term: str):
+        """Sets the search_term of this IngredientObjectItems.
+
+        The original search term that found this food item.  # noqa: E501
+
+        :param search_term: The search_term of this IngredientObjectItems.
+        :type search_term: str
+        """
+
+        self._search_term = search_term
+
+    @property
+    def score(self) -> str:
+        """Gets the score of this IngredientObjectItems.
+
+        A value that represents how similar the name of this food item is to the original search term.  # noqa: E501
+
+        :return: The score of this IngredientObjectItems.
+        :rtype: str
+        """
+        return self._score
+
+    @score.setter
+    def score(self, score: str):
+        """Sets the score of this IngredientObjectItems.
+
+        A value that represents how similar the name of this food item is to the original search term.  # noqa: E501
+
+        :param score: The score of this IngredientObjectItems.
+        :type score: str
+        """
+
+        self._score = score

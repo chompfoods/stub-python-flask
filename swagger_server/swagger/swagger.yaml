@@ -698,6 +698,7 @@ components:
       example:
         items:
         - protein_conversion_factor: 2.027123023002321833274663731572218239307403564453125
+          score: score
           calorie_conversion_factor:
             carbohydrate_value: 3.61607674925191080461672754609026014804840087890625
             protein_value: 7.061401241503109105224211816675961017608642578125
@@ -714,6 +715,7 @@ components:
             name: name
             is_refuse: true
           name: name
+          search_term: search_term
           categories:
           - categories
           - categories
@@ -754,6 +756,7 @@ components:
             description: description
             footnote: footnote
         - protein_conversion_factor: 2.027123023002321833274663731572218239307403564453125
+          score: score
           calorie_conversion_factor:
             carbohydrate_value: 3.61607674925191080461672754609026014804840087890625
             protein_value: 7.061401241503109105224211816675961017608642578125
@@ -770,6 +773,7 @@ components:
             name: name
             is_refuse: true
           name: name
+          search_term: search_term
           categories:
           - categories
           - categories
@@ -1486,9 +1490,17 @@ components:
           type: string
           description: Comments on any unusual aspects of this item. Examples might
             include unusual aspects of the food overall.
+        search_term:
+          type: string
+          description: The original search term that found this food item.
+        score:
+          type: string
+          description: A value that represents how similar the name of this food item
+            is to the original search term.
       description: An object containing information for this specific item.
       example:
         protein_conversion_factor: 2.027123023002321833274663731572218239307403564453125
+        score: score
         calorie_conversion_factor:
           carbohydrate_value: 3.61607674925191080461672754609026014804840087890625
           protein_value: 7.061401241503109105224211816675961017608642578125
@@ -1505,6 +1517,7 @@ components:
           name: name
           is_refuse: true
         name: name
+        search_term: search_term
         categories:
         - categories
         - categories
