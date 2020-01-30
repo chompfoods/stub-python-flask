@@ -395,7 +395,7 @@ paths:
         > ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=raw broccoli```
 
         **Example #2: Set of Ingredients**
-        > ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=raw broccoli,mashed potatoes,raw spinach```
+        > ```https://chompthis.com/api/v2/ingredient/search.php?api_key=API_KEY&find=raw broccoli,mashed potatoes,chicken drumstick```
 
         **Tips**
           * Expose ingredient endpoints by using our **[food lookup tool](https://chompthis.com/api/lookup.php)**.
@@ -407,10 +407,10 @@ paths:
         in: query
         description: "Search our database for a single ingredient or a specific set\
           \ of ingredients.\n\n**Example #1: Single Ingredient**\n> ```&find=raw broccoli```\n\
-          \n**Example #2: Set of Ingredients**\n> ```&find=raw broccoli,raw cauliflower,mashed\
-          \ potatoes```\n\n**Important Notes** \n  * Comma-separated lists cannot\
-          \ contain more than **10 ingredients**. You must perform additional API\
-          \ calls if you are looking up more than 10 ingredients.\n"
+          \n**Example #2: Set of Ingredients**\n> ```&find=raw broccoli,buttermilk\
+          \ waffle,mashed potatoes```\n\n**Important Notes** \n  * Comma-separated\
+          \ lists cannot contain more than **10 ingredients**. You must perform additional\
+          \ API calls if you are looking up more than 10 ingredients.\n"
         required: true
         style: form
         explode: true
