@@ -6,11 +6,10 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
-from swagger_server.models.branded_food_object_calorie_conversion_factor import BrandedFoodObjectCalorieConversionFactor  # noqa: F401,E501
-from swagger_server.models.branded_food_object_components import BrandedFoodObjectComponents  # noqa: F401,E501
-from swagger_server.models.branded_food_object_diet_labels import BrandedFoodObjectDietLabels  # noqa: F401,E501
-from swagger_server.models.branded_food_object_portions import BrandedFoodObjectPortions  # noqa: F401,E501
+from swagger_server.models.ingredient_object_calorie_conversion_factor import IngredientObjectCalorieConversionFactor  # noqa: F401,E501
+from swagger_server.models.ingredient_object_components import IngredientObjectComponents  # noqa: F401,E501
 from swagger_server.models.ingredient_object_nutrients import IngredientObjectNutrients  # noqa: F401,E501
+from swagger_server.models.ingredient_object_portions import IngredientObjectPortions  # noqa: F401,E501
 from swagger_server import util
 
 
@@ -19,7 +18,7 @@ class IngredientObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, name: str=None, categories: List[str]=None, nutrients: IngredientObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, common_name: str=None, description: str=None, footnote: str=None):  # noqa: E501
+    def __init__(self, name: str=None, categories: List[str]=None, nutrients: List[IngredientObjectNutrients]=None, calorie_conversion_factor: IngredientObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, components: List[IngredientObjectComponents]=None, portions: List[IngredientObjectPortions]=None, common_name: str=None, footnote: str=None, search_term: str=None, score: str=None):  # noqa: E501
         """IngredientObjectItems - a model defined in Swagger
 
         :param name: The name of this IngredientObjectItems.  # noqa: E501
@@ -27,36 +26,36 @@ class IngredientObjectItems(Model):
         :param categories: The categories of this IngredientObjectItems.  # noqa: E501
         :type categories: List[str]
         :param nutrients: The nutrients of this IngredientObjectItems.  # noqa: E501
-        :type nutrients: IngredientObjectNutrients
+        :type nutrients: List[IngredientObjectNutrients]
         :param calorie_conversion_factor: The calorie_conversion_factor of this IngredientObjectItems.  # noqa: E501
-        :type calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor
+        :type calorie_conversion_factor: IngredientObjectCalorieConversionFactor
         :param protein_conversion_factor: The protein_conversion_factor of this IngredientObjectItems.  # noqa: E501
         :type protein_conversion_factor: float
-        :param diet_labels: The diet_labels of this IngredientObjectItems.  # noqa: E501
-        :type diet_labels: BrandedFoodObjectDietLabels
         :param components: The components of this IngredientObjectItems.  # noqa: E501
-        :type components: List[BrandedFoodObjectComponents]
+        :type components: List[IngredientObjectComponents]
         :param portions: The portions of this IngredientObjectItems.  # noqa: E501
-        :type portions: List[BrandedFoodObjectPortions]
+        :type portions: List[IngredientObjectPortions]
         :param common_name: The common_name of this IngredientObjectItems.  # noqa: E501
         :type common_name: str
-        :param description: The description of this IngredientObjectItems.  # noqa: E501
-        :type description: str
         :param footnote: The footnote of this IngredientObjectItems.  # noqa: E501
         :type footnote: str
+        :param search_term: The search_term of this IngredientObjectItems.  # noqa: E501
+        :type search_term: str
+        :param score: The score of this IngredientObjectItems.  # noqa: E501
+        :type score: str
         """
         self.swagger_types = {
             'name': str,
             'categories': List[str],
-            'nutrients': IngredientObjectNutrients,
-            'calorie_conversion_factor': BrandedFoodObjectCalorieConversionFactor,
+            'nutrients': List[IngredientObjectNutrients],
+            'calorie_conversion_factor': IngredientObjectCalorieConversionFactor,
             'protein_conversion_factor': float,
-            'diet_labels': BrandedFoodObjectDietLabels,
-            'components': List[BrandedFoodObjectComponents],
-            'portions': List[BrandedFoodObjectPortions],
+            'components': List[IngredientObjectComponents],
+            'portions': List[IngredientObjectPortions],
             'common_name': str,
-            'description': str,
-            'footnote': str
+            'footnote': str,
+            'search_term': str,
+            'score': str
         }
 
         self.attribute_map = {
@@ -65,24 +64,24 @@ class IngredientObjectItems(Model):
             'nutrients': 'nutrients',
             'calorie_conversion_factor': 'calorie_conversion_factor',
             'protein_conversion_factor': 'protein_conversion_factor',
-            'diet_labels': 'diet_labels',
             'components': 'components',
             'portions': 'portions',
             'common_name': 'common_name',
-            'description': 'description',
-            'footnote': 'footnote'
+            'footnote': 'footnote',
+            'search_term': 'search_term',
+            'score': 'score'
         }
         self._name = name
         self._categories = categories
         self._nutrients = nutrients
         self._calorie_conversion_factor = calorie_conversion_factor
         self._protein_conversion_factor = protein_conversion_factor
-        self._diet_labels = diet_labels
         self._components = components
         self._portions = portions
         self._common_name = common_name
-        self._description = description
         self._footnote = footnote
+        self._search_term = search_term
+        self._score = score
 
     @classmethod
     def from_dict(cls, dikt) -> 'IngredientObjectItems':
@@ -140,43 +139,45 @@ class IngredientObjectItems(Model):
         self._categories = categories
 
     @property
-    def nutrients(self) -> IngredientObjectNutrients:
+    def nutrients(self) -> List[IngredientObjectNutrients]:
         """Gets the nutrients of this IngredientObjectItems.
 
+        An array containing nutrient informatio objects for this food item  # noqa: E501
 
         :return: The nutrients of this IngredientObjectItems.
-        :rtype: IngredientObjectNutrients
+        :rtype: List[IngredientObjectNutrients]
         """
         return self._nutrients
 
     @nutrients.setter
-    def nutrients(self, nutrients: IngredientObjectNutrients):
+    def nutrients(self, nutrients: List[IngredientObjectNutrients]):
         """Sets the nutrients of this IngredientObjectItems.
 
+        An array containing nutrient informatio objects for this food item  # noqa: E501
 
         :param nutrients: The nutrients of this IngredientObjectItems.
-        :type nutrients: IngredientObjectNutrients
+        :type nutrients: List[IngredientObjectNutrients]
         """
 
         self._nutrients = nutrients
 
     @property
-    def calorie_conversion_factor(self) -> BrandedFoodObjectCalorieConversionFactor:
+    def calorie_conversion_factor(self) -> IngredientObjectCalorieConversionFactor:
         """Gets the calorie_conversion_factor of this IngredientObjectItems.
 
 
         :return: The calorie_conversion_factor of this IngredientObjectItems.
-        :rtype: BrandedFoodObjectCalorieConversionFactor
+        :rtype: IngredientObjectCalorieConversionFactor
         """
         return self._calorie_conversion_factor
 
     @calorie_conversion_factor.setter
-    def calorie_conversion_factor(self, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor):
+    def calorie_conversion_factor(self, calorie_conversion_factor: IngredientObjectCalorieConversionFactor):
         """Sets the calorie_conversion_factor of this IngredientObjectItems.
 
 
         :param calorie_conversion_factor: The calorie_conversion_factor of this IngredientObjectItems.
-        :type calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor
+        :type calorie_conversion_factor: IngredientObjectCalorieConversionFactor
         """
 
         self._calorie_conversion_factor = calorie_conversion_factor
@@ -205,68 +206,47 @@ class IngredientObjectItems(Model):
         self._protein_conversion_factor = protein_conversion_factor
 
     @property
-    def diet_labels(self) -> BrandedFoodObjectDietLabels:
-        """Gets the diet_labels of this IngredientObjectItems.
-
-
-        :return: The diet_labels of this IngredientObjectItems.
-        :rtype: BrandedFoodObjectDietLabels
-        """
-        return self._diet_labels
-
-    @diet_labels.setter
-    def diet_labels(self, diet_labels: BrandedFoodObjectDietLabels):
-        """Sets the diet_labels of this IngredientObjectItems.
-
-
-        :param diet_labels: The diet_labels of this IngredientObjectItems.
-        :type diet_labels: BrandedFoodObjectDietLabels
-        """
-
-        self._diet_labels = diet_labels
-
-    @property
-    def components(self) -> List[BrandedFoodObjectComponents]:
+    def components(self) -> List[IngredientObjectComponents]:
         """Gets the components of this IngredientObjectItems.
 
         An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)  # noqa: E501
 
         :return: The components of this IngredientObjectItems.
-        :rtype: List[BrandedFoodObjectComponents]
+        :rtype: List[IngredientObjectComponents]
         """
         return self._components
 
     @components.setter
-    def components(self, components: List[BrandedFoodObjectComponents]):
+    def components(self, components: List[IngredientObjectComponents]):
         """Sets the components of this IngredientObjectItems.
 
         An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)  # noqa: E501
 
         :param components: The components of this IngredientObjectItems.
-        :type components: List[BrandedFoodObjectComponents]
+        :type components: List[IngredientObjectComponents]
         """
 
         self._components = components
 
     @property
-    def portions(self) -> List[BrandedFoodObjectPortions]:
+    def portions(self) -> List[IngredientObjectPortions]:
         """Gets the portions of this IngredientObjectItems.
 
         An array of objects containing information on discrete amounts of a food found in this item  # noqa: E501
 
         :return: The portions of this IngredientObjectItems.
-        :rtype: List[BrandedFoodObjectPortions]
+        :rtype: List[IngredientObjectPortions]
         """
         return self._portions
 
     @portions.setter
-    def portions(self, portions: List[BrandedFoodObjectPortions]):
+    def portions(self, portions: List[IngredientObjectPortions]):
         """Sets the portions of this IngredientObjectItems.
 
         An array of objects containing information on discrete amounts of a food found in this item  # noqa: E501
 
         :param portions: The portions of this IngredientObjectItems.
-        :type portions: List[BrandedFoodObjectPortions]
+        :type portions: List[IngredientObjectPortions]
         """
 
         self._portions = portions
@@ -275,7 +255,7 @@ class IngredientObjectItems(Model):
     def common_name(self) -> str:
         """Gets the common_name of this IngredientObjectItems.
 
-        Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")  # noqa: E501
+        Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")  # noqa: E501
 
         :return: The common_name of this IngredientObjectItems.
         :rtype: str
@@ -286,7 +266,7 @@ class IngredientObjectItems(Model):
     def common_name(self, common_name: str):
         """Sets the common_name of this IngredientObjectItems.
 
-        Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")  # noqa: E501
+        Common name associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")  # noqa: E501
 
         :param common_name: The common_name of this IngredientObjectItems.
         :type common_name: str
@@ -295,33 +275,10 @@ class IngredientObjectItems(Model):
         self._common_name = common_name
 
     @property
-    def description(self) -> str:
-        """Gets the description of this IngredientObjectItems.
-
-        A description of this item  # noqa: E501
-
-        :return: The description of this IngredientObjectItems.
-        :rtype: str
-        """
-        return self._description
-
-    @description.setter
-    def description(self, description: str):
-        """Sets the description of this IngredientObjectItems.
-
-        A description of this item  # noqa: E501
-
-        :param description: The description of this IngredientObjectItems.
-        :type description: str
-        """
-
-        self._description = description
-
-    @property
     def footnote(self) -> str:
         """Gets the footnote of this IngredientObjectItems.
 
-        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.  # noqa: E501
+        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall  # noqa: E501
 
         :return: The footnote of this IngredientObjectItems.
         :rtype: str
@@ -332,10 +289,56 @@ class IngredientObjectItems(Model):
     def footnote(self, footnote: str):
         """Sets the footnote of this IngredientObjectItems.
 
-        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.  # noqa: E501
+        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall  # noqa: E501
 
         :param footnote: The footnote of this IngredientObjectItems.
         :type footnote: str
         """
 
         self._footnote = footnote
+
+    @property
+    def search_term(self) -> str:
+        """Gets the search_term of this IngredientObjectItems.
+
+        The original search term that found this food item  # noqa: E501
+
+        :return: The search_term of this IngredientObjectItems.
+        :rtype: str
+        """
+        return self._search_term
+
+    @search_term.setter
+    def search_term(self, search_term: str):
+        """Sets the search_term of this IngredientObjectItems.
+
+        The original search term that found this food item  # noqa: E501
+
+        :param search_term: The search_term of this IngredientObjectItems.
+        :type search_term: str
+        """
+
+        self._search_term = search_term
+
+    @property
+    def score(self) -> str:
+        """Gets the score of this IngredientObjectItems.
+
+        A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item's name is to the original search term.  # noqa: E501
+
+        :return: The score of this IngredientObjectItems.
+        :rtype: str
+        """
+        return self._score
+
+    @score.setter
+    def score(self, score: str):
+        """Sets the score of this IngredientObjectItems.
+
+        A value that represents how similar the name of this food item is to the original search term. The lower the value the closer this item's name is to the original search term.  # noqa: E501
+
+        :param score: The score of this IngredientObjectItems.
+        :type score: str
+        """
+
+        self._score = score

@@ -6,8 +6,6 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
-from swagger_server.models.branded_food_object_nutrients_chomp import BrandedFoodObjectNutrientsChomp  # noqa: F401,E501
-from swagger_server.models.branded_food_object_nutrients_usda import BrandedFoodObjectNutrientsUsda  # noqa: F401,E501
 from swagger_server import util
 
 
@@ -16,25 +14,45 @@ class BrandedFoodObjectNutrients(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, chomp: List[BrandedFoodObjectNutrientsChomp]=None, usda: List[BrandedFoodObjectNutrientsUsda]=None):  # noqa: E501
+    def __init__(self, name: str=None, per_100g: float=None, measurement_unit: str=None, rank: int=None, data_points: int=None, description: str=None):  # noqa: E501
         """BrandedFoodObjectNutrients - a model defined in Swagger
 
-        :param chomp: The chomp of this BrandedFoodObjectNutrients.  # noqa: E501
-        :type chomp: List[BrandedFoodObjectNutrientsChomp]
-        :param usda: The usda of this BrandedFoodObjectNutrients.  # noqa: E501
-        :type usda: List[BrandedFoodObjectNutrientsUsda]
+        :param name: The name of this BrandedFoodObjectNutrients.  # noqa: E501
+        :type name: str
+        :param per_100g: The per_100g of this BrandedFoodObjectNutrients.  # noqa: E501
+        :type per_100g: float
+        :param measurement_unit: The measurement_unit of this BrandedFoodObjectNutrients.  # noqa: E501
+        :type measurement_unit: str
+        :param rank: The rank of this BrandedFoodObjectNutrients.  # noqa: E501
+        :type rank: int
+        :param data_points: The data_points of this BrandedFoodObjectNutrients.  # noqa: E501
+        :type data_points: int
+        :param description: The description of this BrandedFoodObjectNutrients.  # noqa: E501
+        :type description: str
         """
         self.swagger_types = {
-            'chomp': List[BrandedFoodObjectNutrientsChomp],
-            'usda': List[BrandedFoodObjectNutrientsUsda]
+            'name': str,
+            'per_100g': float,
+            'measurement_unit': str,
+            'rank': int,
+            'data_points': int,
+            'description': str
         }
 
         self.attribute_map = {
-            'chomp': 'chomp',
-            'usda': 'usda'
+            'name': 'name',
+            'per_100g': 'per_100g',
+            'measurement_unit': 'measurement_unit',
+            'rank': 'rank',
+            'data_points': 'data_points',
+            'description': 'description'
         }
-        self._chomp = chomp
-        self._usda = usda
+        self._name = name
+        self._per_100g = per_100g
+        self._measurement_unit = measurement_unit
+        self._rank = rank
+        self._data_points = data_points
+        self._description = description
 
     @classmethod
     def from_dict(cls, dikt) -> 'BrandedFoodObjectNutrients':
@@ -48,47 +66,139 @@ class BrandedFoodObjectNutrients(Model):
         return util.deserialize_model(dikt, cls)
 
     @property
-    def chomp(self) -> List[BrandedFoodObjectNutrientsChomp]:
-        """Gets the chomp of this BrandedFoodObjectNutrients.
+    def name(self) -> str:
+        """Gets the name of this BrandedFoodObjectNutrients.
 
-        An array containing an object for each nutrient data point  # noqa: E501
+        Nutrient name  # noqa: E501
 
-        :return: The chomp of this BrandedFoodObjectNutrients.
-        :rtype: List[BrandedFoodObjectNutrientsChomp]
+        :return: The name of this BrandedFoodObjectNutrients.
+        :rtype: str
         """
-        return self._chomp
+        return self._name
 
-    @chomp.setter
-    def chomp(self, chomp: List[BrandedFoodObjectNutrientsChomp]):
-        """Sets the chomp of this BrandedFoodObjectNutrients.
+    @name.setter
+    def name(self, name: str):
+        """Sets the name of this BrandedFoodObjectNutrients.
 
-        An array containing an object for each nutrient data point  # noqa: E501
+        Nutrient name  # noqa: E501
 
-        :param chomp: The chomp of this BrandedFoodObjectNutrients.
-        :type chomp: List[BrandedFoodObjectNutrientsChomp]
+        :param name: The name of this BrandedFoodObjectNutrients.
+        :type name: str
         """
 
-        self._chomp = chomp
+        self._name = name
 
     @property
-    def usda(self) -> List[BrandedFoodObjectNutrientsUsda]:
-        """Gets the usda of this BrandedFoodObjectNutrients.
+    def per_100g(self) -> float:
+        """Gets the per_100g of this BrandedFoodObjectNutrients.
 
-        An array containing an object for each nutrient data point as found in the USDA database  # noqa: E501
+        Amount of the nutrient per 100g of food  # noqa: E501
 
-        :return: The usda of this BrandedFoodObjectNutrients.
-        :rtype: List[BrandedFoodObjectNutrientsUsda]
+        :return: The per_100g of this BrandedFoodObjectNutrients.
+        :rtype: float
         """
-        return self._usda
+        return self._per_100g
 
-    @usda.setter
-    def usda(self, usda: List[BrandedFoodObjectNutrientsUsda]):
-        """Sets the usda of this BrandedFoodObjectNutrients.
+    @per_100g.setter
+    def per_100g(self, per_100g: float):
+        """Sets the per_100g of this BrandedFoodObjectNutrients.
 
-        An array containing an object for each nutrient data point as found in the USDA database  # noqa: E501
+        Amount of the nutrient per 100g of food  # noqa: E501
 
-        :param usda: The usda of this BrandedFoodObjectNutrients.
-        :type usda: List[BrandedFoodObjectNutrientsUsda]
+        :param per_100g: The per_100g of this BrandedFoodObjectNutrients.
+        :type per_100g: float
         """
 
-        self._usda = usda
+        self._per_100g = per_100g
+
+    @property
+    def measurement_unit(self) -> str:
+        """Gets the measurement_unit of this BrandedFoodObjectNutrients.
+
+        The unit used for the measure of this nutrient  # noqa: E501
+
+        :return: The measurement_unit of this BrandedFoodObjectNutrients.
+        :rtype: str
+        """
+        return self._measurement_unit
+
+    @measurement_unit.setter
+    def measurement_unit(self, measurement_unit: str):
+        """Sets the measurement_unit of this BrandedFoodObjectNutrients.
+
+        The unit used for the measure of this nutrient  # noqa: E501
+
+        :param measurement_unit: The measurement_unit of this BrandedFoodObjectNutrients.
+        :type measurement_unit: str
+        """
+
+        self._measurement_unit = measurement_unit
+
+    @property
+    def rank(self) -> int:
+        """Gets the rank of this BrandedFoodObjectNutrients.
+
+        Nutrient rank  # noqa: E501
+
+        :return: The rank of this BrandedFoodObjectNutrients.
+        :rtype: int
+        """
+        return self._rank
+
+    @rank.setter
+    def rank(self, rank: int):
+        """Sets the rank of this BrandedFoodObjectNutrients.
+
+        Nutrient rank  # noqa: E501
+
+        :param rank: The rank of this BrandedFoodObjectNutrients.
+        :type rank: int
+        """
+
+        self._rank = rank
+
+    @property
+    def data_points(self) -> int:
+        """Gets the data_points of this BrandedFoodObjectNutrients.
+
+        Number of observations on which the value is based  # noqa: E501
+
+        :return: The data_points of this BrandedFoodObjectNutrients.
+        :rtype: int
+        """
+        return self._data_points
+
+    @data_points.setter
+    def data_points(self, data_points: int):
+        """Sets the data_points of this BrandedFoodObjectNutrients.
+
+        Number of observations on which the value is based  # noqa: E501
+
+        :param data_points: The data_points of this BrandedFoodObjectNutrients.
+        :type data_points: int
+        """
+
+        self._data_points = data_points
+
+    @property
+    def description(self) -> str:
+        """Gets the description of this BrandedFoodObjectNutrients.
+
+        Description of the nutrient source  # noqa: E501
+
+        :return: The description of this BrandedFoodObjectNutrients.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description: str):
+        """Sets the description of this BrandedFoodObjectNutrients.
+
+        Description of the nutrient source  # noqa: E501
+
+        :param description: The description of this BrandedFoodObjectNutrients.
+        :type description: str
+        """
+
+        self._description = description

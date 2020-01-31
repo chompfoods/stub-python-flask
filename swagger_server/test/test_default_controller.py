@@ -26,27 +26,14 @@ class TestDefaultController(BaseTestCase):
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
-    def test_food_branded_id_php_get(self):
-        """Test case for food_branded_id_php_get
-
-        Get a branded food item using an ID number
-        """
-        query_string = [('id', 56),
-                        ('source', 'source_example')]
-        response = self.client.open(
-            '/api/v2/food/branded/id.php',
-            method='GET',
-            query_string=query_string)
-        self.assert200(response,
-                       'Response body is : ' + response.data.decode('utf-8'))
-
     def test_food_branded_name_php_get(self):
         """Test case for food_branded_name_php_get
 
         Get a branded food item by name
         """
         query_string = [('name', 'name_example'),
-                        ('limit', 56)]
+                        ('limit', 56),
+                        ('page', 56)]
         response = self.client.open(
             '/api/v2/food/branded/name.php',
             method='GET',
@@ -80,17 +67,15 @@ class TestDefaultController(BaseTestCase):
         self.assert200(response,
                        'Response body is : ' + response.data.decode('utf-8'))
 
-    def test_ingredient_search_php_get(self):
-        """Test case for ingredient_search_php_get
+    def test_food_ingredient_search_php_get(self):
+        """Test case for food_ingredient_search_php_get
 
         Get raw/generic food ingredient item(s)
         """
-        query_string = [('find', 56),
-                        ('list', true),
-                        ('raw', true),
+        query_string = [('find', 'find_example'),
                         ('limit', 56)]
         response = self.client.open(
-            '/api/v2/ingredient/search.php',
+            '/api/v2/food/ingredient/search.php',
             method='GET',
             query_string=query_string)
         self.assert200(response,

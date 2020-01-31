@@ -6,15 +6,12 @@ from datetime import date, datetime  # noqa: F401
 from typing import List, Dict  # noqa: F401
 
 from swagger_server.models.base_model_ import Model
-from swagger_server.models.branded_food_object_calorie_conversion_factor import BrandedFoodObjectCalorieConversionFactor  # noqa: F401,E501
-from swagger_server.models.branded_food_object_components import BrandedFoodObjectComponents  # noqa: F401,E501
 from swagger_server.models.branded_food_object_country_details import BrandedFoodObjectCountryDetails  # noqa: F401,E501
 from swagger_server.models.branded_food_object_diet_flags import BrandedFoodObjectDietFlags  # noqa: F401,E501
 from swagger_server.models.branded_food_object_diet_labels import BrandedFoodObjectDietLabels  # noqa: F401,E501
 from swagger_server.models.branded_food_object_nutrients import BrandedFoodObjectNutrients  # noqa: F401,E501
 from swagger_server.models.branded_food_object_package import BrandedFoodObjectPackage  # noqa: F401,E501
 from swagger_server.models.branded_food_object_packaging_photos import BrandedFoodObjectPackagingPhotos  # noqa: F401,E501
-from swagger_server.models.branded_food_object_portions import BrandedFoodObjectPortions  # noqa: F401,E501
 from swagger_server.models.branded_food_object_serving import BrandedFoodObjectServing  # noqa: F401,E501
 from swagger_server import util
 
@@ -24,7 +21,7 @@ class BrandedFoodObjectItems(Model):
 
     Do not edit the class manually.
     """
-    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: str=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: BrandedFoodObjectNutrients=None, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor=None, protein_conversion_factor: float=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, components: List[BrandedFoodObjectComponents]=None, portions: List[BrandedFoodObjectPortions]=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, common_name: str=None, description: str=None, keywords: List[str]=None, footnote: str=None):  # noqa: E501
+    def __init__(self, barcode: str=None, name: str=None, brand: str=None, ingredients: str=None, package: BrandedFoodObjectPackage=None, serving: BrandedFoodObjectServing=None, categories: List[str]=None, nutrients: List[BrandedFoodObjectNutrients]=None, diet_labels: BrandedFoodObjectDietLabels=None, diet_flags: List[BrandedFoodObjectDietFlags]=None, packaging_photos: BrandedFoodObjectPackagingPhotos=None, allergens: List[str]=None, brand_list: List[str]=None, countries: List[str]=None, country_details: BrandedFoodObjectCountryDetails=None, palm_oil_ingredients: List[str]=None, ingredient_list: List[str]=None, has_english_ingredients: bool=None, minerals: List[str]=None, traces: List[str]=None, vitamins: List[str]=None, description: str=None, keywords: List[str]=None):  # noqa: E501
         """BrandedFoodObjectItems - a model defined in Swagger
 
         :param barcode: The barcode of this BrandedFoodObjectItems.  # noqa: E501
@@ -42,21 +39,13 @@ class BrandedFoodObjectItems(Model):
         :param categories: The categories of this BrandedFoodObjectItems.  # noqa: E501
         :type categories: List[str]
         :param nutrients: The nutrients of this BrandedFoodObjectItems.  # noqa: E501
-        :type nutrients: BrandedFoodObjectNutrients
-        :param calorie_conversion_factor: The calorie_conversion_factor of this BrandedFoodObjectItems.  # noqa: E501
-        :type calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor
-        :param protein_conversion_factor: The protein_conversion_factor of this BrandedFoodObjectItems.  # noqa: E501
-        :type protein_conversion_factor: float
+        :type nutrients: List[BrandedFoodObjectNutrients]
         :param diet_labels: The diet_labels of this BrandedFoodObjectItems.  # noqa: E501
         :type diet_labels: BrandedFoodObjectDietLabels
         :param diet_flags: The diet_flags of this BrandedFoodObjectItems.  # noqa: E501
         :type diet_flags: List[BrandedFoodObjectDietFlags]
         :param packaging_photos: The packaging_photos of this BrandedFoodObjectItems.  # noqa: E501
         :type packaging_photos: BrandedFoodObjectPackagingPhotos
-        :param components: The components of this BrandedFoodObjectItems.  # noqa: E501
-        :type components: List[BrandedFoodObjectComponents]
-        :param portions: The portions of this BrandedFoodObjectItems.  # noqa: E501
-        :type portions: List[BrandedFoodObjectPortions]
         :param allergens: The allergens of this BrandedFoodObjectItems.  # noqa: E501
         :type allergens: List[str]
         :param brand_list: The brand_list of this BrandedFoodObjectItems.  # noqa: E501
@@ -75,14 +64,12 @@ class BrandedFoodObjectItems(Model):
         :type minerals: List[str]
         :param traces: The traces of this BrandedFoodObjectItems.  # noqa: E501
         :type traces: List[str]
-        :param common_name: The common_name of this BrandedFoodObjectItems.  # noqa: E501
-        :type common_name: str
+        :param vitamins: The vitamins of this BrandedFoodObjectItems.  # noqa: E501
+        :type vitamins: List[str]
         :param description: The description of this BrandedFoodObjectItems.  # noqa: E501
         :type description: str
         :param keywords: The keywords of this BrandedFoodObjectItems.  # noqa: E501
         :type keywords: List[str]
-        :param footnote: The footnote of this BrandedFoodObjectItems.  # noqa: E501
-        :type footnote: str
         """
         self.swagger_types = {
             'barcode': str,
@@ -92,14 +79,10 @@ class BrandedFoodObjectItems(Model):
             'package': BrandedFoodObjectPackage,
             'serving': BrandedFoodObjectServing,
             'categories': List[str],
-            'nutrients': BrandedFoodObjectNutrients,
-            'calorie_conversion_factor': BrandedFoodObjectCalorieConversionFactor,
-            'protein_conversion_factor': float,
+            'nutrients': List[BrandedFoodObjectNutrients],
             'diet_labels': BrandedFoodObjectDietLabels,
             'diet_flags': List[BrandedFoodObjectDietFlags],
             'packaging_photos': BrandedFoodObjectPackagingPhotos,
-            'components': List[BrandedFoodObjectComponents],
-            'portions': List[BrandedFoodObjectPortions],
             'allergens': List[str],
             'brand_list': List[str],
             'countries': List[str],
@@ -109,10 +92,9 @@ class BrandedFoodObjectItems(Model):
             'has_english_ingredients': bool,
             'minerals': List[str],
             'traces': List[str],
-            'common_name': str,
+            'vitamins': List[str],
             'description': str,
-            'keywords': List[str],
-            'footnote': str
+            'keywords': List[str]
         }
 
         self.attribute_map = {
@@ -124,13 +106,9 @@ class BrandedFoodObjectItems(Model):
             'serving': 'serving',
             'categories': 'categories',
             'nutrients': 'nutrients',
-            'calorie_conversion_factor': 'calorie_conversion_factor',
-            'protein_conversion_factor': 'protein_conversion_factor',
             'diet_labels': 'diet_labels',
             'diet_flags': 'diet_flags',
             'packaging_photos': 'packaging_photos',
-            'components': 'components',
-            'portions': 'portions',
             'allergens': 'allergens',
             'brand_list': 'brand_list',
             'countries': 'countries',
@@ -140,10 +118,9 @@ class BrandedFoodObjectItems(Model):
             'has_english_ingredients': 'has_english_ingredients',
             'minerals': 'minerals',
             'traces': 'traces',
-            'common_name': 'common_name',
+            'vitamins': 'vitamins',
             'description': 'description',
-            'keywords': 'keywords',
-            'footnote': 'footnote'
+            'keywords': 'keywords'
         }
         self._barcode = barcode
         self._name = name
@@ -153,13 +130,9 @@ class BrandedFoodObjectItems(Model):
         self._serving = serving
         self._categories = categories
         self._nutrients = nutrients
-        self._calorie_conversion_factor = calorie_conversion_factor
-        self._protein_conversion_factor = protein_conversion_factor
         self._diet_labels = diet_labels
         self._diet_flags = diet_flags
         self._packaging_photos = packaging_photos
-        self._components = components
-        self._portions = portions
         self._allergens = allergens
         self._brand_list = brand_list
         self._countries = countries
@@ -169,10 +142,9 @@ class BrandedFoodObjectItems(Model):
         self._has_english_ingredients = has_english_ingredients
         self._minerals = minerals
         self._traces = traces
-        self._common_name = common_name
+        self._vitamins = vitamins
         self._description = description
         self._keywords = keywords
-        self._footnote = footnote
 
     @classmethod
     def from_dict(cls, dikt) -> 'BrandedFoodObjectItems':
@@ -258,7 +230,7 @@ class BrandedFoodObjectItems(Model):
     def ingredients(self) -> str:
         """Gets the ingredients of this BrandedFoodObjectItems.
 
-        Ingredients in order of highest value to least  # noqa: E501
+        This food item's ingredients from greatest quantity to least  # noqa: E501
 
         :return: The ingredients of this BrandedFoodObjectItems.
         :rtype: str
@@ -269,7 +241,7 @@ class BrandedFoodObjectItems(Model):
     def ingredients(self, ingredients: str):
         """Sets the ingredients of this BrandedFoodObjectItems.
 
-        Ingredients in order of highest value to least  # noqa: E501
+        This food item's ingredients from greatest quantity to least  # noqa: E501
 
         :param ingredients: The ingredients of this BrandedFoodObjectItems.
         :type ingredients: str
@@ -341,69 +313,27 @@ class BrandedFoodObjectItems(Model):
         self._categories = categories
 
     @property
-    def nutrients(self) -> BrandedFoodObjectNutrients:
+    def nutrients(self) -> List[BrandedFoodObjectNutrients]:
         """Gets the nutrients of this BrandedFoodObjectItems.
 
+        An array containing nutrient informatio objects for this food item  # noqa: E501
 
         :return: The nutrients of this BrandedFoodObjectItems.
-        :rtype: BrandedFoodObjectNutrients
+        :rtype: List[BrandedFoodObjectNutrients]
         """
         return self._nutrients
 
     @nutrients.setter
-    def nutrients(self, nutrients: BrandedFoodObjectNutrients):
+    def nutrients(self, nutrients: List[BrandedFoodObjectNutrients]):
         """Sets the nutrients of this BrandedFoodObjectItems.
 
+        An array containing nutrient informatio objects for this food item  # noqa: E501
 
         :param nutrients: The nutrients of this BrandedFoodObjectItems.
-        :type nutrients: BrandedFoodObjectNutrients
+        :type nutrients: List[BrandedFoodObjectNutrients]
         """
 
         self._nutrients = nutrients
-
-    @property
-    def calorie_conversion_factor(self) -> BrandedFoodObjectCalorieConversionFactor:
-        """Gets the calorie_conversion_factor of this BrandedFoodObjectItems.
-
-
-        :return: The calorie_conversion_factor of this BrandedFoodObjectItems.
-        :rtype: BrandedFoodObjectCalorieConversionFactor
-        """
-        return self._calorie_conversion_factor
-
-    @calorie_conversion_factor.setter
-    def calorie_conversion_factor(self, calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor):
-        """Sets the calorie_conversion_factor of this BrandedFoodObjectItems.
-
-
-        :param calorie_conversion_factor: The calorie_conversion_factor of this BrandedFoodObjectItems.
-        :type calorie_conversion_factor: BrandedFoodObjectCalorieConversionFactor
-        """
-
-        self._calorie_conversion_factor = calorie_conversion_factor
-
-    @property
-    def protein_conversion_factor(self) -> float:
-        """Gets the protein_conversion_factor of this BrandedFoodObjectItems.
-
-        The multiplication factor used to calculate protein from nitrogen  # noqa: E501
-
-        :return: The protein_conversion_factor of this BrandedFoodObjectItems.
-        :rtype: float
-        """
-        return self._protein_conversion_factor
-
-    @protein_conversion_factor.setter
-    def protein_conversion_factor(self, protein_conversion_factor: float):
-        """Sets the protein_conversion_factor of this BrandedFoodObjectItems.
-
-        The multiplication factor used to calculate protein from nitrogen  # noqa: E501
-
-        :param protein_conversion_factor: The protein_conversion_factor of this BrandedFoodObjectItems.
-        :type protein_conversion_factor: float
-        """
-
-        self._protein_conversion_factor = protein_conversion_factor
 
     @property
     def diet_labels(self) -> BrandedFoodObjectDietLabels:
@@ -469,52 +399,6 @@ class BrandedFoodObjectItems(Model):
         """
 
         self._packaging_photos = packaging_photos
-
-    @property
-    def components(self) -> List[BrandedFoodObjectComponents]:
-        """Gets the components of this BrandedFoodObjectItems.
-
-        An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)  # noqa: E501
-
-        :return: The components of this BrandedFoodObjectItems.
-        :rtype: List[BrandedFoodObjectComponents]
-        """
-        return self._components
-
-    @components.setter
-    def components(self, components: List[BrandedFoodObjectComponents]):
-        """Sets the components of this BrandedFoodObjectItems.
-
-        An array of objects containing the constituent parts of a food (e.g. bone is a component of meat)  # noqa: E501
-
-        :param components: The components of this BrandedFoodObjectItems.
-        :type components: List[BrandedFoodObjectComponents]
-        """
-
-        self._components = components
-
-    @property
-    def portions(self) -> List[BrandedFoodObjectPortions]:
-        """Gets the portions of this BrandedFoodObjectItems.
-
-        An array of objects containing information on discrete amounts of a food found in this item  # noqa: E501
-
-        :return: The portions of this BrandedFoodObjectItems.
-        :rtype: List[BrandedFoodObjectPortions]
-        """
-        return self._portions
-
-    @portions.setter
-    def portions(self, portions: List[BrandedFoodObjectPortions]):
-        """Sets the portions of this BrandedFoodObjectItems.
-
-        An array of objects containing information on discrete amounts of a food found in this item  # noqa: E501
-
-        :param portions: The portions of this BrandedFoodObjectItems.
-        :type portions: List[BrandedFoodObjectPortions]
-        """
-
-        self._portions = portions
 
     @property
     def allergens(self) -> List[str]:
@@ -722,27 +606,27 @@ class BrandedFoodObjectItems(Model):
         self._traces = traces
 
     @property
-    def common_name(self) -> str:
-        """Gets the common_name of this BrandedFoodObjectItems.
+    def vitamins(self) -> List[str]:
+        """Gets the vitamins of this BrandedFoodObjectItems.
 
-        Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")  # noqa: E501
+        An array of vitamins that are found in this item  # noqa: E501
 
-        :return: The common_name of this BrandedFoodObjectItems.
-        :rtype: str
+        :return: The vitamins of this BrandedFoodObjectItems.
+        :rtype: List[str]
         """
-        return self._common_name
+        return self._vitamins
 
-    @common_name.setter
-    def common_name(self, common_name: str):
-        """Sets the common_name of this BrandedFoodObjectItems.
+    @vitamins.setter
+    def vitamins(self, vitamins: List[str]):
+        """Sets the vitamins of this BrandedFoodObjectItems.
 
-        Common names associated with this item. These generally clarify what the item is (e.g. when the brand name is \"BRAND's Spicy Enchilada\" the common name may be \"Chicken enchilada\")  # noqa: E501
+        An array of vitamins that are found in this item  # noqa: E501
 
-        :param common_name: The common_name of this BrandedFoodObjectItems.
-        :type common_name: str
+        :param vitamins: The vitamins of this BrandedFoodObjectItems.
+        :type vitamins: List[str]
         """
 
-        self._common_name = common_name
+        self._vitamins = vitamins
 
     @property
     def description(self) -> str:
@@ -789,26 +673,3 @@ class BrandedFoodObjectItems(Model):
         """
 
         self._keywords = keywords
-
-    @property
-    def footnote(self) -> str:
-        """Gets the footnote of this BrandedFoodObjectItems.
-
-        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.  # noqa: E501
-
-        :return: The footnote of this BrandedFoodObjectItems.
-        :rtype: str
-        """
-        return self._footnote
-
-    @footnote.setter
-    def footnote(self, footnote: str):
-        """Sets the footnote of this BrandedFoodObjectItems.
-
-        Comments on any unusual aspects of this item. Examples might include unusual aspects of the food overall.  # noqa: E501
-
-        :param footnote: The footnote of this BrandedFoodObjectItems.
-        :type footnote: str
-        """
-
-        self._footnote = footnote
